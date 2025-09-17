@@ -28,16 +28,19 @@ const About = () => {
                             <div className="about-intro">
                             <h1 className="title about-title name">About Me</h1>
                                 <h3 className="hi-sentence glow">
-                                    Who is Henry?
+                                    Hi! I'm Henry!
                                 </h3>
                                 <p>
-                                    Hey there! 👋 I'm a UI/UX Designer at Lifeguard Digital Health and a graduate of BCIT's New Media Design and Web Development program. My passion lies in crafting seamless user experiences with amazing interactivity and functionality.
+                                    I'm a versatile UI/UX Designer passionate about crafting human-centric products that solve complex communication challenges. My unique background in storytelling, front-end development, and generative AI allows me to approach design from a holistic perspective, balancing user needs with technical feasibility.
                                 </p>
                                 <p>
-                                    I'm an everyday explorer, perpetually hungry for knowledge. Whether it's coding 💻, storytelling 📖, or tinkering with generative AI 🤖, I'm all in! I'm like a sponge for new skills, soaking them up to fuel my passion for user-centered design.
+                                    At Lifeguard Digital Health, I designed user experiences for products that impacted 70,000+ users and were credited with saving over 270 lives. I also led a team in creating a design system that streamlined development handoff and integrated generative AI into our workflow, boosting design efficiency by 50%.
                                 </p>
                                 <p>
-                                    Writing novels is my ultimate passion 📚! It's not just a hobby; it's a way for me to dive into the depths of understanding user needs, weaving messages with creativity, and nurturing brilliant ideas. With published works and a thriving online community, I've amassed 6500+ Facebook followers 🌟 and 3 million+ online hits 📊. Join me on this literary journey! 😊
+                                    As a seasoned content creator, I've leveraged visual storytelling to build an online audience of 6,500+ followers with 3.5 million+ views. I excel at creating designs that are not only functional but also engaging and impactful.
+                                </p>
+                                <p>
+                                    I am a proactive problem-solver dedicated to creating meaningful, data-informed experiences and am always eager to take on a new challenge.
                                 </p>
                                 <p className="bold-text glow">
                                     I believe that design can create meaningful connections among those who matter most to us!
@@ -118,20 +121,30 @@ const About = () => {
                                     Certification
                                 </h2>
                                 <p className="bold-text about-subtitles">
-                                    Google UX Design Certificate
+                                    Coursera
                                 </p>
+                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
+                                    <p>
+                                        Google UX Design
+                                    </p>
+                                </div>
+                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
+                                    <p>
+                                        Google Prompting Essentials
+                                    </p>
+                                </div>
+                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
+                                    <p>
+                                        GenAI for UX Designers
+                                    </p>
+                                </div>
                                 <p>
-                                    ➊ Foundations of User Experience (UX) Design
+
                                 </p>
-                                <p>
-                                    ➋ Start the UX Design Process: Empathize, Define, and Ideate
-                                </p>
-                                <p>
-                                    ➌ Conduct UX Research and Test Early Concepts
-                                </p>
-                                <p>
-                                    ➍ Build Wireframes and Low-Fidelity Prototypes
-                                </p> 
+
                                 <p className="bold-text about-subtitles">
                                     LinkedIn Learning
                                 </p>
@@ -159,7 +172,31 @@ const About = () => {
                                         Figma: Handling off to Developers
                                     </p>
                                 </div>
-                                <p className="bold-text about-subtitles">
+                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
+                                    <p>
+                                        Figma: Designing with Variables and Conditionals
+                                    </p>
+                                </div>
+                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
+                                    <p>
+                                        Figma: Using Auto Layout
+                                    </p>
+                                </div>
+                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
+                                    <p>
+                                        Using AI in the UX Design Process
+                                    </p>
+                                </div>
+                                                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
+                                    <p>
+                                        Design Psychology: Master the Art and Science of UX Design
+                                    </p>
+                                </div>
+                                {/* <p className="bold-text about-subtitles">
                                     Codecademy
                                 </p>
                                 <div className="bullet-pts">
@@ -173,7 +210,7 @@ const About = () => {
                                     <p>
                                         Build a Website with HTML, CSS, and GitHub Pages Skill Path
                                     </p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

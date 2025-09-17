@@ -99,19 +99,19 @@ const Home = () => {
                         <h1 className="big-title name">Hi! I'm Henry,</h1>
                         <div className="components">
                             <img loading="lazy" src={Components} alt="Components"/>
-                            <h3>A <span className="glow">UI/UX Designer</span></h3>
+                            <h3><span className="glow">UI/UX Designer + Storyteller</span></h3>
                         </div>
                         <div className="effects first-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>Storyteller in User-Centred Design</p>
+                            <p>Storytelling with 9+ years of creative experience</p>
                         </div>
                         <div className="effects second-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>Designer With Web Development Skills</p>
+                            <p>Design-to-Code with front-end skills</p>
                         </div>
                         <div className="effects third-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>Everyday Explorer Embracing <span className="glow">Dreams</span></p>
+                            <p>Accelerating UX by 50%+ with <span className="glow">AI-Driven</span> solutions</p>
                         </div>
                         <div className="quote">
                             <p className="quote-symbol-1">❛❛</p>
@@ -121,8 +121,8 @@ const Home = () => {
                             <p className="quote-symbol-2">❜❜</p>
                         </div>
                         <div className="show-me-btn-container">
-                            <NavLink to="about" className="button show-me-btn">
-                                ✨ Know More About Me!
+                            <NavLink to="knapsackx" className="button show-me-btn">
+                                ✨ Impress Me!
                             </NavLink>
                             <img loading="lazy" src={Riceball} alt="Riceball" className="riceball" />
                         </div>
@@ -150,7 +150,7 @@ const Home = () => {
                     <div className={`projects knapsack-x ${activeprojects === 'uiux-btn' ? 'active' : ''}`}>
                         <div className="project-info">
                             <h3 className="project-title">Knapsack-X Mobile App Redesign</h3>
-                            <p>Play-to-earn app redesign shaped by generative AI, user research, usability testing, and a comprehensive design system.</p>
+                            <p>End-to-end Figma mobile gaming app redesign from 100+ generative AI visuals to compelling interactive Figma prototype shaped by design system and usability testing.</p>
                             <div className="stacks-container">
                                 <img loading="lazy" src={Figma}></img>
                                 <img loading="lazy" src={Photoshop}></img>
@@ -171,7 +171,7 @@ const Home = () => {
                     <div className={`projects cooktivate ${activeprojects === 'web-dev-btn' ? 'active' : ''}`}>                        
                         <div className="project-info">
                             <h3 className="project-title">Cooktivate</h3>
-                            <p>Interactive cooking learning app design that ingeniously blends the excitement of gaming and the connectivity of social media, transforming your culinary journey into an immersive and captivating experience.</p>
+                            <p>Gamified cooking app design from a personalized, interactive user experience to a compelling interactive Figma prototype with powerful animations, shaped by a custom visual design and reusable Figma components.</p>
                             <div className="stacks-container">
                                 <img loading="lazy" src={Figma}></img>
                                 <img loading="lazy" src={Illustrator}></img>
@@ -194,7 +194,7 @@ const Home = () => {
                     <div className={`projects inm ${activeprojects === 'web-dev-btn' ? 'active' : ''}`}>
                         <div className="project-info">
                             <h3 className="project-title">Institute of New Media</h3>
-                            <p>Education institution multi-purpose app design reimagined for the modern era, empowering users with seamless functionality and captivating user experience.</p>
+                            <p>Collaborative Figma project to build a single, comprehensive school app that centralizes class schedules, communication, a marketplace, activity tracking, and digital identity into a streamlined user experience.</p>
                             <div className="stacks-container">
                                 <img loading="lazy" src={Figma}></img>
                                 <img loading="lazy" src={Illustrator}></img>
@@ -215,7 +215,7 @@ const Home = () => {
                     <div className="projects askaiden">
                         <div className="project-info">
                             <h3 className="project-title">AskAiden</h3>
-                            <p>AI-powered education search website design, transforming search experiences with an interactive user interface and the innovative ChatGPT API, and simplifying prompt writing.</p>
+                            <p>Publicly launched AI-powered education search website designed to simplify prompt writing and transform the AI search experience, collaborating with developers leveraging the ChatGPT API</p>
                             <div className="stacks-container">
                                 <img loading="lazy" src={Figma}></img>
                                 <img loading="lazy" src={Illustrator}></img>
@@ -238,7 +238,7 @@ const Home = () => {
                     <div className={`projects mymori ${activeprojects === 'web-dev-btn' ? 'active' : ''}`}>
                         <div className="project-info">
                             <h3 className="project-title">MyMori</h3>
-                            <p>AI-powered gamified app design fostering emotional well-being and community through virtual forests.</p>
+                            <p>AI-powered gamified mobile app designed to foster emotional well-being by helping users grow a virtual forest, with visual assets crafted using generative AI.</p>
                             <div className="stacks-container">
                                 <img loading="lazy" src={Figma}></img>
                                 <img loading="lazy" src={Ai}></img>
@@ -256,7 +256,7 @@ const Home = () => {
                             <img loading="lazy" src={MymoriDevice} alt="MyMori Showcase"/>
                         </div>
                     </div>                 
-                    <div className="projects sirloin-society">
+                    {/* <div className="projects sirloin-society">
                         <div className="project-info">
                             <h3 className="project-title">Sirloin Society</h3>
                             <p>Responsive website project that showcases a luxurious steakhouse experience. The project involved creating a comprehensive design system, wireframing, prototyping, and hand coding.</p>
@@ -296,7 +296,7 @@ const Home = () => {
                         <div className="project-img linkedin-learning-img">
                             <img loading="lazy" src={LinkedInLearningDevice} alt="LinkedIn Learning Showcase"/>
                         </div>
-                    </div>   
+                    </div>    */}
                 </div>
             </div>
             <div className="grid">

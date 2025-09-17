@@ -6,8 +6,8 @@ const Footer = () => {
             <div className="grid">
                 <div className="container">
                     <div>
-                        <h2>Contact Me</h2>
-                        <p className="contact-message">👋 Reach out to me! I'm always thrilled to hear from you and explore exciting opportunities together! 😆</p>
+                        <h2>Connect with Me!</h2>
+                        <p className="contact-message">👋 I'm always thrilled to hear from you and explore exciting opportunities together! 👍</p>
                     </div>
 
                     <div>
@@ -78,8 +78,8 @@ const Footer = () => {
                     </div>
 
                     <div className="copyright-message">
-                        <p>I hand-coded this site from scratch with Figma, React.js, Sass and dreams!✨ Hope you love it! 💚</p>
-                        <p>&copy; 2023 Hoi Wing Henry Cheung. All rights reserved.</p>
+                        <p>Designed in Figma and developed with React.js, this portfolio shows my versatility as a designer who understands the language of development ✨</p>
+                        <p>&copy; 2025 Hoi Wing Henry Cheung. All rights reserved.</p>
                     </div>
                 </div>
             </div>
