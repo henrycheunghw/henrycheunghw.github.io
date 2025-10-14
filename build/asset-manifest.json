@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8778a929.css",
-    "main.js": "/static/js/main.ea3a86c1.js",
+    "main.js": "/static/js/main.eae90935.js",
     "static/js/787.eb1c1c13.chunk.js": "/static/js/787.eb1c1c13.chunk.js",
     "static/media/knapsackx-powerpoint.mp4": "/static/media/knapsackx-powerpoint.0948be3edcd7452e3bd5.mp4",
     "static/media/mymori-gamification.mp4": "/static/media/mymori-gamification.1c30462634c4b8cf452e.mp4",
@@ -158,16 +158,16 @@
     "static/media/clickup.svg": "/static/media/clickup.5a8d2ded934bbd796b023dfdac49f292.svg",
     "static/media/storytelling.svg": "/static/media/storytelling.7897d97e13025f44e3965110f06163f9.svg",
     "static/media/effects.svg": "/static/media/effects.943b7eb871b08c0f471d9099428eaf13.svg",
-    "static/media/webflow.svg": "/static/media/webflow.327e82f2fc78ca729edbb4f453710e3b.svg",
     "index.html": "/index.html",
+    "static/media/webflow.svg": "/static/media/webflow.327e82f2fc78ca729edbb4f453710e3b.svg",
     "static/media/miro.svg": "/static/media/miro.b1457362af3180ffcdb69554a0ff0378.svg",
     "static/media/components.svg": "/static/media/components.17568cc69a7f21c7dd3187498d6f2921.svg",
     "main.8778a929.css.map": "/static/css/main.8778a929.css.map",
-    "main.ea3a86c1.js.map": "/static/js/main.ea3a86c1.js.map",
+    "main.eae90935.js.map": "/static/js/main.eae90935.js.map",
     "787.eb1c1c13.chunk.js.map": "/static/js/787.eb1c1c13.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8778a929.css",
-    "static/js/main.ea3a86c1.js"
+    "static/js/main.eae90935.js"
   ]
 }
