@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ReactGA from "react-ga4";
 import Components from "../../assets/icons/components.svg";
 import Effects from "../../assets/icons/effects.svg";
 import Knapsackxhero from "../../assets/project-hero/knapsackx-hero.png";
@@ -39,10 +40,40 @@ import { NavLink } from "react-router-dom";
 
 const Knapsackx = () => {
 
+    useEffect(() => {
+        // Send pageview only, GA is already initialized in index.js
+        ReactGA.send({ hitType: "pageview", page: "/Knapsackx" });
+    }, []);
+
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
+        });
+    };
+
+        // Button click handlers for GA tracking
+    const handleFigmaDesignClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Design - Knapsack X",
+        });
+    };
+
+    const handleFigmaPrototypeClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Prototype - Knapsack X",
+        });
+    };
+
+    const handleNextProjectClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "Next Cool Project - Knapsack X",
         });
     };
 
@@ -71,8 +102,22 @@ const Knapsackx = () => {
                         <div className="detail"><p>10 weeks</p></div>
                         <div className="category"><p>Time</p></div>
                         <div className="detail"><p>Feb 2024</p></div>
-                        <a href="https://www.figma.com/file/k6fWF3Y2sM2ErLyADyed8B/Knapsack-X-Mobile-App-Design-(Portfolio-Version)?type=design&node-id=246%3A3318&mode=design&t=1yDzo7qLToTQO5Vb-1" className="button repository" target="_blank">View Figma Design</a>
-                        <a href="https://www.figma.com/proto/k6fWF3Y2sM2ErLyADyed8B/Knapsack-X-Mobile-App-Design-(Portfolio-Version)?page-id=246%3A3318&type=design&node-id=401-18828&viewport=342%2C612%2C0.03&t=3RB7K0KaHzKsmZSu-1&scaling=scale-down&starting-point-node-id=401%3A18828&mode=design" className="button website" target="_blank">View Figma Prototype</a>
+                        <a 
+                            href="https://www.figma.com/file/k6fWF3Y2sM2ErLyADyed8B/Knapsack-X-Mobile-App-Design-(Portfolio-Version)?type=design&node-id=246%3A3318&mode=design&t=1yDzo7qLToTQO5Vb-1" 
+                            className="button repository" 
+                            target="_blank"
+                            onClick={handleFigmaDesignClick}
+                        >
+                            View Figma Design
+                        </a>
+                        <a 
+                            href="https://www.figma.com/proto/k6fWF3Y2sM2ErLyADyed8B/Knapsack-X-Mobile-App-Design-(Portfolio-Version)?page-id=246%3A3318&type=design&node-id=401-18828&viewport=342%2C612%2C0.03&t=3RB7K0KaHzKsmZSu-1&scaling=scale-down&starting-point-node-id=401%3A18828&mode=design" 
+                            className="button website" 
+                            target="_blank"
+                            onClick={handleFigmaPrototypeClick}
+                        >
+                            View Figma Prototype
+                        </a>
                     </div>
                 </div>
 
@@ -451,7 +496,11 @@ const Knapsackx = () => {
                     </p>
                 </div>
 
-                <NavLink onClick={scrollToTop()} to="/Cooktivate" className="button view-others">
+                <NavLink 
+                    onClick={() => { scrollToTop(); handleNextProjectClick(); }}
+                    to="/Cooktivate" 
+                    className="button view-others"
+                >
                     😎 Next Cool Project!
                 </NavLink>
             </div>

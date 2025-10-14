@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ReactGA from "react-ga4";
 import Components from "../../assets/icons/components.svg";
 import Effects from "../../assets/icons/effects.svg";
 import Cooktivatehero from "../../assets/project-hero/cooktivate-hero.png";
@@ -35,10 +36,57 @@ import { NavLink } from "react-router-dom";
 
 const Cooktivate = () => {
 
+    useEffect(() => {
+        // Send pageview only, GA is already initialized in index.js
+        ReactGA.send({ hitType: "pageview", page: "/Cooktivate" });
+    }, []);
+
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
+        });
+    };
+
+    // Button click handlers for GA tracking
+    const handleFigmaDesignClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Design - Cooktivate",
+        });
+    };
+
+    const handleFigmaPrototypeClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Prototype - Cooktivate",
+        });
+    };
+
+    const handleCallRiceballClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "Call Riceball - Cooktivate",
+        });
+    };
+
+
+    const handleUsabilityReportClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Usability Test Report - Cooktivate",
+        });
+    };
+
+    const handleNextProjectClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "Next Cool Project - Cooktivate",
         });
     };
 
@@ -67,8 +115,22 @@ const Cooktivate = () => {
                         <div className="detail"><p>12 weeks</p></div>
                         <div className="category"><p>Time</p></div>
                         <div className="detail"><p>Apr 2023</p></div>
-                        <a href="https://www.figma.com/file/xrQiKR2isA2DHtOJbcdmoU/Project-2%3A-Cooktivate-Design?type=design&node-id=0%3A1&mode=design&t=RsbyYBfAbnfERQEC-1" className="button repository" target="_blank">View Figma Design</a>
-                        <a href="https://www.figma.com/proto/xrQiKR2isA2DHtOJbcdmoU/Project-2%3A-Cooktivate-Design?page-id=0%3A1&type=design&node-id=644-6452&viewport=993%2C1133%2C0.41&t=pt1Jv9waXxaF0HEt-1&scaling=scale-down&starting-point-node-id=644%3A6452" className="button website" target="_blank">View Figma Prototype</a>
+                        <a 
+                            href="https://www.figma.com/file/xrQiKR2isA2DHtOJbcdmoU/Project-2%3A-Cooktivate-Design?type=design&node-id=0%3A1&mode=design&t=RsbyYBfAbnfERQEC-1" 
+                            className="button repository" 
+                            target="_blank"
+                            onClick={handleFigmaDesignClick}
+                        >
+                            View Figma Design
+                        </a>
+                        <a 
+                            href="https://www.figma.com/proto/xrQiKR2isA2DHtOJbcdmoU/Project-2%3A-Cooktivate-Design?page-id=0%3A1&type=design&node-id=644-6452&viewport=993%2C1133%2C0.41&t=pt1Jv9waXxaF0HEt-1&scaling=scale-down&starting-point-node-id=644%3A6452" 
+                            className="button website" 
+                            target="_blank"
+                            onClick={handleFigmaPrototypeClick}
+                        >
+                            View Figma Prototype
+                        </a>
                     </div>
                 </div>
 
@@ -101,7 +163,10 @@ const Cooktivate = () => {
                             </p>
                         </div>
                         <div className="call-riceball">
-                            <button className="button call-riceball">
+                            <button 
+                                className="button call-riceball"
+                                onClick={handleCallRiceballClick}
+                            >
                                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_644_5958)">
                                     <path d="M24.9988 77.6606H24.9839C16.0813 77.424 8.38557 74.3563 3.87167 69.2456C0.117155 64.9948 -1.44404 59.4995 -0.771625 52.9162C0.223215 43.1891 3.22895 35.1185 7.92103 29.5746C12.3904 24.297 18.2873 21.3561 24.9754 21.0687H24.9988H25.0221C31.7102 21.3561 37.6071 24.297 42.0765 29.5746C46.7686 35.1185 49.7764 43.1891 50.7691 52.9162C51.4416 59.5016 49.8804 64.9948 46.1258 69.2456C41.6119 74.3584 33.9163 77.424 25.0136 77.6606H24.9988ZM24.9988 22.1251C18.6246 22.404 13.0013 25.216 8.73344 30.2549C4.17924 35.634 1.25624 43.5082 0.284729 53.0218C-0.357992 59.303 1.11836 64.5257 4.66924 68.5484C8.98587 73.4373 16.3952 76.374 24.9988 76.6043C33.6023 76.374 41.0117 73.4373 45.3283 68.5484C48.8792 64.5257 50.3534 59.303 49.7128 53.0218C48.7413 43.5082 45.8183 35.634 41.2641 30.2549C36.9962 25.216 31.3729 22.404 24.9988 22.1251Z" fill="white"/>
@@ -349,7 +414,14 @@ const Cooktivate = () => {
                     </div>
                 </div>
 
-                <a href="https://www.canva.com/design/DAFfrGK-w0Q/XJV432mtM4tAtgS0vuSw6g/view?utm_content=DAFfrGK-w0Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" className="button view-others usability-test-report-button" target="_blank">🔍 View Usability Test Report</a>
+                <a 
+                    href="https://www.canva.com/design/DAFfrGK-w0Q/XJV432mtM4tAtgS0vuSw6g/view?utm_content=DAFfrGK-w0Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" 
+                    className="button view-others usability-test-report-button" 
+                    target="_blank"
+                    onClick={handleUsabilityReportClick}
+                >
+                    🔍 View Usability Test Report
+                </a>
 
                 <div className="usability-testing-container writings-container grid">
                     <h2 className="usability-testing-title">Takeaways</h2>
@@ -374,7 +446,11 @@ const Cooktivate = () => {
                     </div>
                 </div>
 
-                <NavLink onClick={scrollToTop()} to="/Inm" className="button view-others">
+                <NavLink 
+                    onClick={() => { scrollToTop(); handleNextProjectClick(); }}
+                    to="/Inm" 
+                    className="button view-others"
+                >
                     😎 Next Cool Project!
                 </NavLink>
             </div>

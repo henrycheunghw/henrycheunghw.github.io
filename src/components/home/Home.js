@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactGA from "react-ga4";
 
 import PersonalLogo from "../../assets/cards/personal-logo.svg";
 import Components from "../../assets/icons/components.svg";
@@ -78,6 +79,14 @@ import Riceball from "../../assets/interactive/riceball/riceball.svg";
 
 const Home = () => {
 
+    const handleImpressClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "Impress Me Button",
+        });
+    };
+
     const [activeprojects, setActiveprojects] = useState(null);
 
     const handleClick = (projects) => {
@@ -121,7 +130,11 @@ const Home = () => {
                             <p className="quote-symbol-2">❜❜</p>
                         </div>
                         <div className="show-me-btn-container">
-                            <NavLink to="knapsackx" className="button show-me-btn">
+                            <NavLink 
+                                to="knapsackx" 
+                                className="button show-me-btn"
+                                onClick={handleImpressClick}
+                            >
                                 ✨ Impress Me!
                             </NavLink>
                             <img loading="lazy" src={Riceball} alt="Riceball" className="riceball" />
@@ -158,8 +171,31 @@ const Home = () => {
                                 <img loading="lazy" src={Jira}></img>
                             </div>
                             <div className="project-more">
-                                <NavLink to="knapsackx" className="button">View Project</NavLink>
-                                <a href="https://www.figma.com/file/k6fWF3Y2sM2ErLyADyed8B/Knapsack-X-Mobile-App-Design-(Portfolio-Version)?type=design&node-id=246%3A3318&mode=design&t=BdSrWe1tFmXZluay-1" target="_blank" className="project-link">
+                                <NavLink 
+                                    to="knapsackx" 
+                                    className="button"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                            category: "Project",
+                                            action: "Click",
+                                            label: "View Project - Knapsack X",
+                                        });
+                                    }}
+                                >
+                                    View Project
+                                </NavLink>
+                                <a 
+                                    href="https://www.figma.com/file/k6fWF3Y2sM2ErLyADyed8B/Knapsack-X-Mobile-App-Design-(Portfolio-Version)?type=design&node-id=246%3A3318&mode=design&t=BdSrWe1tFmXZluay-1" 
+                                    target="_blank" 
+                                    className="project-link"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                            category: "External Link",
+                                            action: "Click",
+                                            label: "Figma Link - Knapsack X",
+                                        });
+                                    }}
+                                >
                                     <img loading="lazy" src={Figmalink} alt="Figma Link"/>
                                 </a>
                             </div>
@@ -181,8 +217,32 @@ const Home = () => {
                                 <img loading="lazy" src={Trello}></img>
                             </div>
                             <div className="project-more">
-                                <NavLink to="cooktivate" className="button">View Project</NavLink>
-                                <a href="https://www.figma.com/file/xrQiKR2isA2DHtOJbcdmoU/Project-2%3A-Cooktivate-Design?type=design&node-id=0%3A1&t=V0SnVXTB0ymkRIah-1" target="_blank" className="project-link">
+                                <NavLink
+                                    to="cooktivate"
+                                    className="button"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                        category: "Project",
+                                        action: "Click",
+                                        label: "View Project - Cooktivate",
+                                        });
+                                    }}
+                                >
+                                    View Project
+                                </NavLink>
+
+                                <a 
+                                    href="https://www.figma.com/file/xrQiKR2isA2DHtOJbcdmoU/Project-2%3A-Cooktivate-Design?type=design&node-id=0%3A1&t=V0SnVXTB0ymkRIah-1" 
+                                    target="_blank" 
+                                    className="project-link"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                            category: "External Link",
+                                            action: "Click",
+                                            label: "Figma Link - Cooktivate",
+                                        });
+                                    }}
+                                >
                                     <img loading="lazy" src={Figmalink} alt="Figma Link"/>
                                 </a>
                             </div>
@@ -202,8 +262,31 @@ const Home = () => {
                                 <img loading="lazy" src={Canva}></img>
                             </div>
                             <div className="project-more">
-                                <NavLink to="inm" className="button">View Project</NavLink>
-                                <a href="https://www.figma.com/file/q4koYIkUc84agIgD9o4dLn/Project-3%3A-INM?type=design&node-id=0%3A1&t=tznyvIfj6pidYAuN-1" target="_blank" className="project-link">
+                                <NavLink
+                                    to="inm"
+                                    className="button"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                        category: "Project",
+                                        action: "Click",
+                                        label: "View Project - INM",
+                                        });
+                                    }}
+                                >
+                                    View Project
+                                </NavLink>
+                                <a 
+                                    href="https://www.figma.com/file/q4koYIkUc84agIgD9o4dLn/Project-3%3A-INM?type=design&node-id=0%3A1&t=tznyvIfj6pidYAuN-1" 
+                                    target="_blank" 
+                                    className="project-link"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                            category: "External Link",
+                                            action: "Click",
+                                            label: "Figma Link - INM",
+                                        });
+                                    }}
+                                >
                                     <img loading="lazy" src={Figmalink} alt="Figma Link"/>
                                 </a>
                             </div>
@@ -225,8 +308,31 @@ const Home = () => {
                                 <img loading="lazy" src={Sass}></img>
                             </div>
                             <div className="project-more">
-                                <NavLink to="askaiden" className="button">View Project</NavLink>
-                                <a href="https://www.figma.com/file/Elh3B0N2vESHLu2myUhYJZ/AskAiden-Design?type=design&node-id=305%3A3363&mode=design&t=T8JBCvi2qm1bNKsy-1" target="_blank" className="project-link">
+                                <NavLink
+                                    to="askaiden"
+                                    className="button"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                        category: "Project",
+                                        action: "Click",
+                                        label: "View Project - AskAiden",
+                                        });
+                                    }}
+                                >
+                                    View Project
+                                </NavLink>
+                                <a 
+                                    href="https://www.figma.com/file/Elh3B0N2vESHLu2myUhYJZ/AskAiden-Design?type=design&node-id=305%3A3363&mode=design&t=T8JBCvi2qm1bNKsy-1" 
+                                    target="_blank" 
+                                    className="project-link"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                            category: "External Link",
+                                            action: "Click",
+                                            label: "Figma Link - AskAiden",
+                                        });
+                                    }}
+                                >
                                     <img loading="lazy" src={Figmalink} alt="Figma Link"/>
                                 </a>
                             </div>
@@ -246,8 +352,31 @@ const Home = () => {
                                 <img loading="lazy" src={Illustrator}></img>
                             </div>
                             <div className="project-more">
-                                <NavLink to="mymori" className="button">View Project</NavLink>
-                                <a href="https://www.figma.com/file/jSXsAIo8puevjI05sRxUHe/My-Mori-(Hackathon-Version)?type=design&node-id=0%3A1&mode=design&t=62stQrmVfd96NZTn-1" target="_blank" className="project-link">
+                                <NavLink
+                                    to="mymori"
+                                    className="button"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                        category: "Project",
+                                        action: "Click",
+                                        label: "View Project - MyMori",
+                                        });
+                                    }}
+                                >
+                                    View Project
+                                </NavLink>
+                                <a 
+                                    href="https://www.figma.com/file/jSXsAIo8puevjI05sRxUHe/My-Mori-(Hackathon-Version)?type=design&node-id=0%3A1&mode=design&t=62stQrmVfd96NZTn-1" 
+                                    target="_blank" 
+                                    className="project-link"
+                                    onClick={() => {
+                                        ReactGA.event({
+                                            category: "External Link",
+                                            action: "Click",
+                                            label: "Figma Link - MyMori",
+                                        });
+                                    }}
+                                >
                                     <img loading="lazy" src={Figmalink} alt="Figma Link"/>
                                 </a>
                             </div>
@@ -303,7 +432,18 @@ const Home = () => {
                 {/* <NavLink onClick={scrollToTop()} to="/skills" className="button view-others">
                     🤩 View My Skills!
                 </NavLink> */}
-                <NavLink onClick={scrollToTop()} to="/About" className="button view-others">
+                <NavLink 
+                    onClick={() => {
+                        ReactGA.event({
+                        category: "Button",
+                        action: "Click",
+                        label: "Know More About Me Button",
+                        });
+                        scrollToTop();
+                    }} 
+                    to="/About" 
+                    className="button view-others"
+                >
                     😆 Know More About Me!
                 </NavLink>
             </div>

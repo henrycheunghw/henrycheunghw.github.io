@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./global-css/app.css";
+
+// Google Analytics
+import ReactGA from "react-ga4";
 
 // import components
 import Header from "./components/header/Header";
@@ -19,29 +22,32 @@ import ContactButton from "./components/contact-btn/ContactBtn";
 import ScrollToTopButton from "./components/scroll-btn/ScrollBtn";
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
 
   return (
-    <BrowserRouter>
-      <div className="container">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/knapsackx" element={<Knapsackx />} />
-          <Route path="/inm" element={<Inm />} />
-          <Route path="/cooktivate" element={<Cooktivate />} />
-          <Route path="/askaiden" element={<Askaiden />} />
-          <Route path="/mymori" element={<Mymori />} />
-          <Route path="/linkedinlearning" element={<Linkedinlearning />} />
-          <Route path="/sirloinsociety" element={<Sirloinsociety />} />
-        </Routes>
-        <Footer />
-        <ContactButton />
-        <ScrollToTopButton />
-      </div>
-    </BrowserRouter>
+    <div className="container">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/knapsackx" element={<Knapsackx />} />
+        <Route path="/inm" element={<Inm />} />
+        <Route path="/cooktivate" element={<Cooktivate />} />
+        <Route path="/askaiden" element={<Askaiden />} />
+        <Route path="/mymori" element={<Mymori />} />
+        <Route path="/linkedinlearning" element={<Linkedinlearning />} />
+        <Route path="/sirloinsociety" element={<Sirloinsociety />} />
+      </Routes>
+      <Footer />
+      <ContactButton />
+      <ScrollToTopButton />
+    </div>
   );
-}
+};
 
 export default App;

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ReactGA from "react-ga4";
 import Effects from "../../assets/icons/effects.svg";
 import Inmhero from "../../assets/project-hero/inm-hero.png";
 import Inmherosm from "../../assets/project-hero/inm-hero-sm.png";
@@ -12,10 +13,40 @@ import { NavLink } from "react-router-dom";
 
 const Inm = () => {
 
+    useEffect(() => {
+        // Send pageview only, GA is already initialized in index.js
+        ReactGA.send({ hitType: "pageview", page: "/Inm" });
+    }, []);
+
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
+        });
+    };
+
+        // Button click handlers for GA tracking
+    const handleFigmaDesignClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Design - INM",
+        });
+    };
+
+    const handleFigmaPrototypeClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Prototype - INM",
+        });
+    };
+
+    const handleNextProjectClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "Next Cool Project - INM",
         });
     };
 
@@ -46,8 +77,22 @@ const Inm = () => {
                         <div className="detail"><p>6 weeks</p></div>
                         <div className="category"><p>Time</p></div>
                         <div className="detail"><p>Apr 2023</p></div>
-                        <a href="https://www.figma.com/file/q4koYIkUc84agIgD9o4dLn/Project-3%3A-INM?type=design&node-id=0%3A1&mode=design&t=lEnBUTxqOMb4m10d-1" className="button repository" target="_blank">View Figma Design</a>
-                        <a href="https://www.figma.com/proto/q4koYIkUc84agIgD9o4dLn/Project-3%3A-INM?page-id=0%3A1&type=design&node-id=1-139&viewport=528%2C406%2C0.03&scaling=scale-down&starting-point-node-id=1%3A139&show-proto-sidebar=1&mode=design" className="button website" target="_blank">View Figma Prototype</a>
+                        <a 
+                            href="https://www.figma.com/file/q4koYIkUc84agIgD9o4dLn/Project-3%3A-INM?type=design&node-id=0%3A1&mode=design&t=lEnBUTxqOMb4m10d-1" 
+                            className="button repository" 
+                            target="_blank"
+                            onClick={handleFigmaDesignClick}
+                        >
+                            View Figma Design
+                        </a>
+                        <a 
+                            href="https://www.figma.com/proto/q4koYIkUc84agIgD9o4dLn/Project-3%3A-INM?page-id=0%3A1&type=design&node-id=1-139&viewport=528%2C406%2C0.03&scaling=scale-down&starting-point-node-id=1%3A139&show-proto-sidebar=1&mode=design" 
+                            className="button website" 
+                            target="_blank"
+                            onClick={handleFigmaPrototypeClick}
+                        >
+                            View Figma Prototype
+                        </a>
                     </div>
                 </div>
 
@@ -202,7 +247,11 @@ const Inm = () => {
                     </iframe> */}
                 </div>
 
-                <NavLink onClick={scrollToTop()} to="/Askaiden" className="button view-others">
+                <NavLink 
+                    onClick={() => { scrollToTop(); handleNextProjectClick(); }}
+                    to="/Askaiden" 
+                    className="button view-others"
+                >
                     😎 Next Cool Project!
                 </NavLink>
             </div>

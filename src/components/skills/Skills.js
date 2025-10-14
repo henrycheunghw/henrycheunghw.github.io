@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { NavLink } from "react-router-dom";
+import ReactGA from "react-ga4";
 
 import Figma from "../../assets/skills/figma.svg"; 
 import Illustrator from "../../assets/skills/illustrator.svg";
@@ -63,30 +64,35 @@ import Uxtweak from "../../assets/skills/uxtweak.svg";
 
 const Skills = () => {
 
-    const [activeSkill, setActiveSkill] = useState(null); // State to track the clicked element
+    const [activeSkill, setActiveSkill] = useState(null); 
 
     const uiuxCardRef = useRef(null);
     const webDevCardRef = useRef(null);
     const explorerCardRef = useRef(null);
 
     const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     const handleClick = (skill) => {
-      setActiveSkill(skill); // Update the activeSkill state with the clicked element
+      setActiveSkill(skill); 
 
-          // Scroll to the corresponding card based on the clicked skill
-        if (skill === 'uiux') {
-            uiuxCardRef.current.scrollIntoView({ behavior: 'smooth' });
-        } else if (skill === 'web-dev') {
-            webDevCardRef.current.scrollIntoView({ behavior: 'smooth' });
-        } else if (skill === 'explorer') {
-            explorerCardRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
+      if (skill === 'uiux') {
+          uiuxCardRef.current.scrollIntoView({ behavior: 'smooth' });
+      } else if (skill === 'web-dev') {
+          webDevCardRef.current.scrollIntoView({ behavior: 'smooth' });
+      } else if (skill === 'explorer') {
+          explorerCardRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
+    const trackShowMe = (label) => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: label
+        });
+        scrollToTop();
     };
 
     return (
@@ -96,8 +102,7 @@ const Skills = () => {
                     <div className="grid">
                         <h1 className="title skills-title big-title">My Skills</h1>
                         <div className="iam">
-                            {/* <p className="big-title let">let</p> */}
-                            <h1 className="big-title name">I'm absolutely a</h1>
+                            <h1 className="big-title name">I'm great at</h1>
                         </div>
                         <div className="arrow glow">
                             <p className="arrow1">►</p>
@@ -105,290 +110,156 @@ const Skills = () => {
                             <p className="arrow3">►</p>
                         </div>
                         <div className="skills-role">
-                            <p className={`uiux ${activeSkill === 'uiux' ? 'active' : ''}`} onClick={() => handleClick('uiux')}>UI/UX Designer</p>
-                            <p className={`web-dev ${activeSkill === 'web-dev' ? 'active' : ''}`} onClick={() => handleClick('web-dev')}>Web Developer</p>
-                            <p className={`explorer ${activeSkill === 'explorer' ? 'active' : ''}`} onClick={() => handleClick('explorer')}>Everyday Explorer</p>
+                            <p className={`uiux ${activeSkill === 'uiux' ? 'active' : ''}`} onClick={() => handleClick('uiux')}>UI/UX Design</p>
+                            <p className={`web-dev ${activeSkill === 'web-dev' ? 'active' : ''}`} onClick={() => handleClick('web-dev')}>Development</p>
+                            <p className={`explorer ${activeSkill === 'explorer' ? 'active' : ''}`} onClick={() => handleClick('explorer')}>Proactive Learning</p>
                         </div>
+
+                        {/* UI/UX Card */}
                         <div className={`skills-cards uiux-card grid ${activeSkill === 'uiux' ? 'active' : ''}`} ref={uiuxCardRef}>
                             <div className="card-text">
                                 <div className="card-title">
-                                    <h2>UI/UX Designer</h2>
-                                    <NavLink onClick={scrollToTop()} to="/Knapsackx" className="button">
+                                    <h2>UI/UX Design</h2>
+                                    <NavLink 
+                                        onClick={() => trackShowMe("show me - UI/UX Designer - Skills Page")} 
+                                        to="/Knapsackx" 
+                                        className="button"
+                                    >
                                         Show Me! 😍
                                     </NavLink>
                                 </div>
                                 <p>
-                                    I blend creativity and empathy to shape intuitive and visually stunning experiences that leave a lasting impression and make users feel truly connected.
+                                    I create intuitive and meaningful experiences that are both beautiful and easy to use, helping users feel understood and connected.
                                 </p>
                             </div>
                             <div className="card-items">
                                 <div className="col1">
-                                    <div className="card-item">
-                                        <img src={Figma}></img>
-                                        <p>Figma</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Illustrator}></img>
-                                        <p>Illustrator</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Photoshop}></img>
-                                        <p>Photoshop</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Framer}></img>
-                                        <p>Framer</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Miro}></img>
-                                        <p>Miro</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Protopie}></img>
-                                        <p>ProtoPie</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Xd}></img>
-                                        <p>XD</p>
-                                    </div>
+                                    <div className="card-item"><img src={Figma} alt="Figma"/><p>Figma</p></div>
+                                    <div className="card-item"><img src={Illustrator} alt="Illustrator"/><p>Illustrator</p></div>
+                                    <div className="card-item"><img src={Photoshop} alt="Photoshop"/><p>Photoshop</p></div>
+                                    <div className="card-item"><img src={Framer} alt="Framer"/><p>Framer</p></div>
+                                    <div className="card-item"><img src={Miro} alt="Miro"/><p>Miro</p></div>
+                                    <div className="card-item"><img src={Protopie} alt="ProtoPie"/><p>ProtoPie</p></div>
+                                    <div className="card-item"><img src={Xd} alt="XD"/><p>XD</p></div>
                                 </div>
                                 <div className="col2">
-                                    <div className="card-item">
-                                        <img src={Wordpress}></img>
-                                        <p>WordPress</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Elementor}></img>
-                                        <p>Elementor</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Webflow}></img>
-                                        <p>Webflow</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Wix}></img>
-                                        <p>Wix</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Procreate}></img>
-                                        <p>Procreate</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Indesign}></img>
-                                        <p>InDesign</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Spline}></img>
-                                        <p>Spline</p>
-                                    </div>
+                                    <div className="card-item"><img src={Wordpress} alt="WordPress"/><p>WordPress</p></div>
+                                    <div className="card-item"><img src={Elementor} alt="Elementor"/><p>Elementor</p></div>
+                                    <div className="card-item"><img src={Webflow} alt="Webflow"/><p>Webflow</p></div>
+                                    <div className="card-item"><img src={Wix} alt="Wix"/><p>Wix</p></div>
+                                    <div className="card-item"><img src={Procreate} alt="Procreate"/><p>Procreate</p></div>
+                                    <div className="card-item"><img src={Indesign} alt="InDesign"/><p>InDesign</p></div>
+                                    <div className="card-item"><img src={Spline} alt="Spline"/><p>Spline</p></div>
                                 </div>
                                 <div className="col3">
-                                    <div className="card-item">
-                                        <img src={Canva}></img>
-                                        <p>Canva</p>
-                                    </div>
-                                    <div className="card-item last">
-                                        <img src={Zeplin}></img>
-                                        <p>Zeplin</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Aftereffects}></img>
-                                        <p>After Effects</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Dimension}></img>
-                                        <p>Dimension</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Aero}></img>
-                                        <p>Aero</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Jitter}></img>
-                                        <p>Jitter</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Uxtweak}></img>
-                                        <p>UXTweak</p>
-                                    </div>
+                                    <div className="card-item"><img src={Canva} alt="Canva"/><p>Canva</p></div>
+                                    <div className="card-item last"><img src={Zeplin} alt="Zeplin"/><p>Zeplin</p></div>
+                                    <div className="card-item"><img src={Aftereffects} alt="After Effects"/><p>After Effects</p></div>
+                                    <div className="card-item"><img src={Dimension} alt="Dimension"/><p>Dimension</p></div>
+                                    <div className="card-item"><img src={Aero} alt="Aero"/><p>Aero</p></div>
+                                    <div className="card-item"><img src={Jitter} alt="Jitter"/><p>Jitter</p></div>
+                                    <div className="card-item"><img src={Uxtweak} alt="UXTweak"/><p>UXTweak</p></div>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Web Dev Card */}
                         <div className={`skills-cards web-dev-card grid ${activeSkill === 'web-dev' ? 'active' : ''}`} ref={webDevCardRef}>
                             <div className="card-text">
                                 <div className="card-title">
-                                    <h2>Web Developer</h2>
-                                    <NavLink onClick={scrollToTop()} to="/Askaiden" className="button">
+                                    <h2>Development</h2>
+                                    <NavLink 
+                                        onClick={() => trackShowMe("show me - Web Developer - Skills Page")} 
+                                        to="/Askaiden" 
+                                        className="button"
+                                    >
                                         Show Me! 😍
                                     </NavLink>
                                 </div>
                                 <p>
-                                I'm the architect behind captivating digital experiences, crafting code that brings ideas to life and builds connections in the virtual world.
+                                    I'm a designer with coding skills, bridging design and development to build scalable systems and seamless user experiences.
                                 </p>
                             </div>
                             <div className="card-items">
                                 <div className="col1">
-                                    <div className="card-item">
-                                        <img src={Html}></img>
-                                        <p>HTML5</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Css}></img>
-                                        <p>CSS3</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Javascript}></img>
-                                        <p>JavaScript</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Reactjs}></img>
-                                        <p>React.js</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Reactnative}></img>
-                                        <p>React Native</p>
-                                    </div>
+                                    <div className="card-item"><img src={Html} alt="HTML5"/><p>HTML5</p></div>
+                                    <div className="card-item"><img src={Css} alt="CSS3"/><p>CSS3</p></div>
+                                    <div className="card-item"><img src={Javascript} alt="JavaScript"/><p>JavaScript</p></div>
+                                    <div className="card-item"><img src={Reactjs} alt="React.js"/><p>React.js</p></div>
+                                    <div className="card-item"><img src={Reactnative} alt="React Native"/><p>React Native</p></div>
                                 </div>
                                 <div className="col2">
-                                    <div className="card-item">
-                                        <img src={Jquery}></img>
-                                        <p>jQuery</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Typescript}></img>
-                                        <p>Typescript</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Bootstrap}></img>
-                                        <p>Bootstrap</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Tailwind}></img>
-                                        <p>Tailwind</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Sass}></img>
-                                        <p>Sass</p>
-                                    </div>
+                                    <div className="card-item"><img src={Jquery} alt="jQuery"/><p>jQuery</p></div>
+                                    <div className="card-item"><img src={Typescript} alt="Typescript"/><p>Typescript</p></div>
+                                    <div className="card-item"><img src={Bootstrap} alt="Bootstrap"/><p>Bootstrap</p></div>
+                                    <div className="card-item"><img src={Tailwind} alt="Tailwind"/><p>Tailwind</p></div>
+                                    <div className="card-item"><img src={Sass} alt="Sass"/><p>Sass</p></div>
                                 </div>
                                 <div className="col3">
-                                    <div className="card-item">
-                                        <img src={Materialui}></img>
-                                        <p>Material UI</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Git}></img>
-                                        <p>Git</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Gsap}></img>
-                                        <p>GSAP</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Aframe}></img>
-                                        <p>A-Frame</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Phaser}></img>
-                                        <p>Phaser.js</p>
-                                    </div>
+                                    <div className="card-item"><img src={Materialui} alt="Material UI"/><p>Material UI</p></div>
+                                    <div className="card-item"><img src={Git} alt="Git"/><p>Git</p></div>
+                                    <div className="card-item"><img src={Gsap} alt="GSAP"/><p>GSAP</p></div>
+                                    <div className="card-item"><img src={Aframe} alt="A-Frame"/><p>A-Frame</p></div>
+                                    <div className="card-item"><img src={Phaser} alt="Phaser.js"/><p>Phaser.js</p></div>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Everyday Explorer Card */}
                         <div className={`skills-cards explorer-card grid ${activeSkill === 'explorer' ? 'active' : ''}`} ref={explorerCardRef}>
                             <div className="card-text">
                                 <div className="card-title">
-                                    <h2>Everyday Explorer</h2>
-                                    <NavLink onClick={scrollToTop()} to="/Mymori" className="button">
+                                    <h2>Proactive Learning</h2>
+                                    <NavLink 
+                                        onClick={() => trackShowMe("show me - Everyday Explorer - Skills Page")} 
+                                        to="/Mymori" 
+                                        className="button"
+                                    >
                                         Show Me! 😍
                                     </NavLink>
                                 </div>
                                 <p>
-                                    I'm an enthusiastic learner, constantly exploring and pushing my limits to unlock new possibilities.
+                                    I’m an enthusiastic learner who wakes up at 5 AM every day to explore new skills and push my limits."
                                 </p>
                             </div>
                             <div className="card-items">
                                 <div className="col1">
-                                    <div className="card-item">
-                                        <img src={Ai}></img>
-                                        <p>Generative AI</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Prompt}></img>
-                                        <p>Prompt Engineering</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Jira}></img>
-                                        <p>Jira</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Trello}></img>
-                                        <p>Trello</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Slack}></img>
-                                        <p>Slack</p>
-                                    </div>
+                                    <div className="card-item"><img src={Ai} alt="Generative AI"/><p>Generative AI</p></div>
+                                    <div className="card-item"><img src={Prompt} alt="Prompt Engineering"/><p>Prompt Engineering</p></div>
+                                    <div className="card-item"><img src={Jira} alt="Jira"/><p>Jira</p></div>
+                                    <div className="card-item"><img src={Trello} alt="Trello"/><p>Trello</p></div>
+                                    <div className="card-item"><img src={Slack} alt="Slack"/><p>Slack</p></div>
                                 </div>
                                 <div className="col2">
-                                    <div className="card-item">
-                                        <img src={Microsoftoffice}></img>
-                                        <p>Microsoft Office</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Googlesuite}></img>
-                                        <p>Google Suite</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Storytelling}></img>
-                                        <p>Storytelling</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Copywriting}></img>
-                                        <p>Copywriting</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Novels}></img>
-                                        <p>Novels Writing</p>
-                                    </div>
+                                    <div className="card-item"><img src={Microsoftoffice} alt="Microsoft Office"/><p>Microsoft Office</p></div>
+                                    <div className="card-item"><img src={Googlesuite} alt="Google Suite"/><p>Google Suite</p></div>
+                                    <div className="card-item"><img src={Storytelling} alt="Storytelling"/><p>Storytelling</p></div>
+                                    <div className="card-item"><img src={Copywriting} alt="Copywriting"/><p>Copywriting</p></div>
+                                    <div className="card-item"><img src={Novels} alt="Novels Writing"/><p>Novels Writing</p></div>
                                 </div>
                                 <div className="col3">
-                                    <div className="card-item">
-                                        <img src={Graphic}></img>
-                                        <p>Graphic Design</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Communication}></img>
-                                        <p>Communication</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Premiere}></img>
-                                        <p>Premiere Pro</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Audition}></img>
-                                        <p>Audition</p>
-                                    </div>
-                                    <div className="card-item">
-                                        <img src={Socialmedia}></img>
-                                        <p>Social Media</p>
-                                    </div>
+                                    <div className="card-item"><img src={Socialmedia} alt="Social Media"/><p>Social Media</p></div>
+                                    <div className="card-item"><img src={Graphic} alt="Graphic Design"/><p>Graphic Design</p></div>
+                                    <div className="card-item"><img src={Premiere} alt="Premiere"/><p>Premiere</p></div>
+                                    <div className="card-item"><img src={Audition} alt="Audition"/><p>Audition</p></div>
+                                    <div className="card-item"><img src={Node} alt="Node.js"/><p>Node.js</p></div>
+                                    <div className="card-item"><img src={Php} alt="PHP"/><p>PHP</p></div>
+                                    <div className="card-item"><img src={Sql} alt="SQL"/><p>SQL</p></div>
+                                    <div className="card-item"><img src={Mysql} alt="MySQL"/><p>MySQL</p></div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
+
             <div className="grid">
-                {/* <NavLink onClick={scrollToTop()} to="/About" className="button view-others">
-                    😆 Know More About Me!
-                </NavLink> */}
-                <NavLink onClick={scrollToTop()} to="/" className="button view-others">
+                <NavLink onClick={scrollToTop} to="/" className="button view-others">
                     😎 View My Projects!
                 </NavLink>
             </div>
         </div>
-
     )
 }
 

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ReactGA from "react-ga4";
 import Effects from "../../assets/icons/effects.svg";
 import Mymorihero from "../../assets/project-hero/mymori-hero.png";
 import Mymoriherosm from "../../assets/project-hero/mymori-hero-sm.png";
@@ -12,10 +13,48 @@ import { NavLink } from "react-router-dom";
 
 const Mymori = () => {
 
+    useEffect(() => {
+        // Send pageview only, GA is already initialized in index.js
+        ReactGA.send({ hitType: "pageview", page: "/Mymori" });
+    }, []);
+
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
+        });
+    };
+
+    // Button click handlers for GA tracking
+    const handleDemoVideoClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Demo Video - MyMori",
+        });
+    };
+
+    const handleFigmaDesignClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Design - MyMori",
+        });
+    };
+
+    const handleFigmaPrototypeClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Prototype - MyMori",
+        });
+    };
+
+    const handleNextProjectClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "Next Cool Project - MyMori",
         });
     };
 
@@ -46,9 +85,30 @@ const Mymori = () => {
                         <div className="detail"><p>4 weeks (ongoing)</p></div>
                         <div className="category"><p>Time</p></div>
                         <div className="detail"><p>Jun 2023</p></div>
-                        <a href="https://www.youtube.com/watch?v=HR4TJpqNWcs&ab_channel=HoiWingHenryCheung" className="button repository" target="_blank">View Demo Video</a>
-                        <a href="https://www.figma.com/file/jSXsAIo8puevjI05sRxUHe/My-Mori-(Hackathon-Version)?type=design&node-id=0%3A1&mode=design&t=62stQrmVfd96NZTn-1" className="button repository" target="_blank">View Figma Design</a>
-                        <a href="https://www.figma.com/proto/voJ09e9SrygsFZTgSkAC9M/My-Mori?page-id=0%3A1&type=design&node-id=78-1307&viewport=16%2C263%2C0.3&scaling=scale-down&starting-point-node-id=78%3A1307&mode=design" className="button website" target="_blank">View Figma Prototype</a>
+                        <a 
+                            href="https://www.youtube.com/watch?v=HR4TJpqNWcs&ab_channel=HoiWingHenryCheung" 
+                            className="button repository" 
+                            target="_blank"
+                            onClick={handleDemoVideoClick}
+                        >
+                            View Demo Video
+                        </a>
+                        <a 
+                            href="https://www.figma.com/file/jSXsAIo8puevjI05sRxUHe/My-Mori-(Hackathon-Version)?type=design&node-id=0%3A1&mode=design&t=62stQrmVfd96NZTn-1" 
+                            className="button repository" 
+                            target="_blank"
+                            onClick={handleFigmaDesignClick}
+                        >
+                            View Figma Design
+                        </a>
+                        <a 
+                            href="https://www.figma.com/proto/voJ09e9SrygsFZTgSkAC9M/My-Mori?page-id=0%3A1&type=design&node-id=78-1307&viewport=16%2C263%2C0.3&scaling=scale-down&starting-point-node-id=78%3A1307&mode=design" 
+                            className="button website" 
+                            target="_blank"
+                            onClick={handleFigmaPrototypeClick}
+                        >
+                            View Figma Prototype
+                        </a>
                     </div>
                 </div>
 
@@ -233,7 +293,11 @@ const Mymori = () => {
                     ></iframe>
                 </div>
 
-                <NavLink onClick={scrollToTop()} to="/Linkedinlearning" className="button view-others">
+                <NavLink 
+                    onClick={() => { scrollToTop(); handleNextProjectClick(); }}
+                    to="/Knapsackx" 
+                    className="button view-others"
+                >
                     😎 Next Cool Project!
                 </NavLink>
             </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Propic from "../../assets/propic.png";
 import Riceball from "../../assets/interactive/riceball/riceball.svg";
+import ReactGA from "react-ga4";
 
 const About = () => {
 
@@ -13,7 +14,21 @@ const About = () => {
     };
 
     const navigateToLinkedIn = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "connect with me - About Page"
+        });
         window.open("https://www.linkedin.com/in/hoi-wing-henry-cheung/", "_blank");
+    };
+
+    const handleViewSkills = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "view my skills - About Page"
+        });
+        scrollToTop();
     };
 
     return (
@@ -22,11 +37,11 @@ const About = () => {
                 <div className="about-title-container">
                     <div className="grid">
                         <div className="about-image">
-                            <img loading="lazy" src={Propic}></img>
+                            <img loading="lazy" src={Propic} alt="Henry Cheung"></img>
                         </div>
                         <div className="about-text">
                             <div className="about-intro">
-                            <h1 className="title about-title name">About Me</h1>
+                                <h1 className="title about-title name">About Me</h1>
                                 <h3 className="hi-sentence glow">
                                     Hi! I'm Henry!
                                 </h3>
@@ -45,183 +60,106 @@ const About = () => {
                                 <p className="bold-text glow">
                                     I believe that design can create meaningful connections among those who matter most to us!
                                 </p>
-                                <button className="contact-me-btn button" onClick={navigateToLinkedIn}>
-                                    🚀 Connect with Me!
+                                <button 
+                                    className="contact-me-btn button" 
+                                    onClick={navigateToLinkedIn}
+                                >
+                                    👋 Connect with Me!
                                 </button>
                             </div>
 
                             <div className="about-experience">
-                                <h2 className="about-titles">
-                                    Experience
-                                </h2>
-                                <p className="bold-text about-subtitles">
-                                    UX/UI Designer
-                                </p>
-                                <p>
-                                    Lifeguard Digital Health
-                                </p>
-                                <p className="bold-text about-subtitles">
-                                    UX/UI Designer - Internship
-                                </p>
-                                <p>
-                                    Knapsack-X
-                                </p>
-                                <p className="bold-text about-subtitles">
-                                    UI/UX Graphic Designer - Volunteer
-                                </p>
-                                <p>
-                                    Empowered Futures
-                                </p>
-                                <p className="bold-text about-subtitles">
-                                    UI/UX Designer
-                                </p>
-                                <p>
-                                    WaffleHacks 2023 by Major League Hacking (MLH)
-                                </p>
-                                <p className="bold-text about-subtitles">
-                                    Set Representative
-                                </p>
-                                <p>
-                                    British Columbia Institute of Technology
-                                </p>
-                                <p className="bold-text about-subtitles">
-                                    Nomination for the 13th Hong Kong Emerging Writer Award
-                                </p>
-                                <p>
-                                    Radio Television Hong Kong (RTHK)
-                                </p>
-                                <p className="bold-text about-subtitles">
-                                    Guest Speaker for Hong Kong Book Fair 2017
-                                </p>
-                                <p>
-                                    Hong Kong Trade Development Council
-                                </p>
+                                <h2 className="about-titles">Experience</h2>
+                                <p className="bold-text about-subtitles">UX/UI Designer</p>
+                                <p>Lifeguard Digital Health</p>
+                                <p className="bold-text about-subtitles">UX/UI Designer - Internship</p>
+                                <p>Knapsack-X</p>
+                                <p className="bold-text about-subtitles">UI/UX Graphic Designer - Volunteer</p>
+                                <p>Empowered Futures</p>
+                                <p className="bold-text about-subtitles">UI/UX Designer</p>
+                                <p>WaffleHacks 2023 by Major League Hacking (MLH)</p>
+                                <p className="bold-text about-subtitles">Set Representative</p>
+                                <p>British Columbia Institute of Technology</p>
+                                <p className="bold-text about-subtitles">Nomination for the 13th Hong Kong Emerging Writer Award</p>
+                                <p>Radio Television Hong Kong (RTHK)</p>
+                                <p className="bold-text about-subtitles">Guest Speaker for Hong Kong Book Fair 2017</p>
+                                <p>Hong Kong Trade Development Council</p>
                             </div>
 
                             <div className="about-education">
-                                <h2 className="about-titles">
-                                    Education
-                                </h2>
+                                <h2 className="about-titles">Education</h2>
                                 <p className="about-subtitles">
-                                    <span className="bold-text">New Media Design and Web Development, Diploma</span>  -  Currently Enrolled
+                                    <span className="bold-text">New Media Design and Web Development, Diploma</span> - Currently Enrolled
                                 </p>
-                                <p>
-                                    British Columbia Institute of Technology, Vancouver BC
-                                </p>
+                                <p>British Columbia Institute of Technology, Vancouver BC</p>
                                 <p className="about-subtitles">
-                                    <span className="bold-text">Bachelor of Social Science, Politics and Public Administration</span>  -  Sep 2014 - May 2018
+                                    <span className="bold-text">Bachelor of Social Science, Government and Public Administration</span> - Sep 2014 - May 2018
                                 </p>
-                                <p>
-                                    The Chinese University of Hong Kong, Hong Kong
-                                </p>
+                                <p>The Chinese University of Hong Kong, Hong Kong</p>
                             </div>
 
                             <div className="about-certification">
-                                <h2 className="about-titles">
-                                    Certification
-                                </h2>
-                                <p className="bold-text about-subtitles">
-                                    Coursera
-                                </p>
+                                <h2 className="about-titles">Certification</h2>
+                                <p className="bold-text about-subtitles">Coursera</p>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Google UX Design
-                                    </p>
+                                    <p>Google UX Design</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Google Prompting Essentials
-                                    </p>
+                                    <p>Google Prompting Essentials</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        GenAI for UX Designers
-                                    </p>
+                                    <p>GenAI for UX Designers</p>
                                 </div>
-                                <p>
-
-                                </p>
-
-                                <p className="bold-text about-subtitles">
-                                    LinkedIn Learning
-                                </p>
+                                <p className="bold-text about-subtitles">LinkedIn Learning</p>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Career Essentials in Generative AI by Microsoft and LinkedIn
-                                    </p>
+                                    <p>Career Essentials in Generative AI by Microsoft and LinkedIn</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Designing Accessible Components in Figma
-                                    </p>
+                                    <p>Designing Accessible Components in Figma</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Designing Microinteractions with Figma
-                                    </p>
+                                    <p>Designing Microinteractions with Figma</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Figma: Handling off to Developers
-                                    </p>
+                                    <p>Figma: Handling off to Developers</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Figma: Designing with Variables and Conditionals
-                                    </p>
+                                    <p>Figma: Designing with Variables and Conditionals</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Figma: Using Auto Layout
-                                    </p>
+                                    <p>Figma: Using Auto Layout</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Using AI in the UX Design Process
-                                    </p>
-                                </div>
-                                                                <div className="bullet-pts">
-                                    <p className="bullet">►</p>
-                                    <p>
-                                        Design Psychology: Master the Art and Science of UX Design
-                                    </p>
-                                </div>
-                                {/* <p className="bold-text about-subtitles">
-                                    Codecademy
-                                </p>
-                                <div className="bullet-pts">
-                                    <p className="bullet">►</p>
-                                    <p>
-                                        Create a Front-End App with React Skill Path
-                                    </p>
+                                    <p>Using AI in the UX Design Process</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>
-                                        Build a Website with HTML, CSS, and GitHub Pages Skill Path
-                                    </p>
-                                </div> */}
+                                    <p>Design Psychology: Master the Art and Science of UX Design</p>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className="grid">
-                {/* <NavLink onClick={scrollToTop()} to="/" className="button view-others">
-                    😎 View My Projects!
-                </NavLink> */}
-                <NavLink onClick={scrollToTop()} to="/skills" className="button view-others">
-                    🤩 View My Skills!
+                <NavLink 
+                    onClick={handleViewSkills} 
+                    to="/skills" 
+                    className="button view-others"
+                >
+                    ✨ View My Skills!
                 </NavLink>
             </div>
         </div>

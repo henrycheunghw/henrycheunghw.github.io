@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ReactGA from "react-ga4";
 import Effects from "../../assets/icons/effects.svg";
 import Askaidenhero from "../../assets/project-hero/askaiden-hero.png";
 import Askaidenherosm from "../../assets/project-hero/askaiden-hero-sm.png";
@@ -12,10 +13,49 @@ import { NavLink } from "react-router-dom";
 
 const Askaiden = () => {
 
+    useEffect(() => {
+        // Send pageview only, GA is already initialized in index.js
+        ReactGA.send({ hitType: "pageview", page: "/Askaiden" });
+    }, []);
+
     const scrollToTop = () => {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
+        });
+    };
+
+        // Button click handlers for GA tracking
+    const handleWebsiteClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Website - AskAiden",
+        });
+    };
+
+    const handleDemoVideoClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Demo Video - AskAiden",
+        });
+    };
+
+    const handleFigmaDesignClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "View Figma Design - AskAiden",
+        });
+    };
+
+
+    const handleNextProjectClick = () => {
+        ReactGA.event({
+            category: "Button",
+            action: "Click",
+            label: "Next Cool Project - AskAiden",
         });
     };
 
@@ -214,7 +254,11 @@ const Askaiden = () => {
                     ></iframe>
                 </div>
 
-                <NavLink onClick={scrollToTop()} to="/Mymori" className="button view-others">
+                <NavLink 
+                    onClick={() => { scrollToTop(); handleNextProjectClick(); }}
+                    to="/Mymori" 
+                    className="button view-others"
+                >
                     😎 Next Cool Project!
                 </NavLink>
             </div>
