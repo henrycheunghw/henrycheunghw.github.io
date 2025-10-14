@@ -102,7 +102,7 @@ const Skills = () => {
                     <div className="grid">
                         <h1 className="title skills-title big-title">My Skills</h1>
                         <div className="iam">
-                            <h1 className="big-title name">I'm great at</h1>
+                            <h1 className="big-title name">I'm absolutely great at</h1>
                         </div>
                         <div className="arrow glow">
                             <p className="arrow1">►</p>
