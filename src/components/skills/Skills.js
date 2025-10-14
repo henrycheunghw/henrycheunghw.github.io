@@ -242,10 +242,6 @@ const Skills = () => {
                                     <div className="card-item"><img src={Graphic} alt="Graphic Design"/><p>Graphic Design</p></div>
                                     <div className="card-item"><img src={Premiere} alt="Premiere"/><p>Premiere</p></div>
                                     <div className="card-item"><img src={Audition} alt="Audition"/><p>Audition</p></div>
-                                    <div className="card-item"><img src={Node} alt="Node.js"/><p>Node.js</p></div>
-                                    <div className="card-item"><img src={Php} alt="PHP"/><p>PHP</p></div>
-                                    <div className="card-item"><img src={Sql} alt="SQL"/><p>SQL</p></div>
-                                    <div className="card-item"><img src={Mysql} alt="MySQL"/><p>MySQL</p></div>
                                 </div>
                             </div>
                         </div>
