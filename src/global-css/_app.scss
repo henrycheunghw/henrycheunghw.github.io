@@ -1,6 +1,7 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 // Set global CSS variables
 
@@ -13,18 +14,21 @@ $l-darkgrey: #212121;
 $l-mid-grey: #444;
 $l-lightblue: #98dfdc;
 $l-darkblue: #0e5474;
-$cyan: #8ff5e1;
+$cyan: #a8f2e2;
 
 // Global Gradients
 $grey-black: linear-gradient(180deg, rgb(68, 68, 68) 0%, rgb(33, 33, 33) 100%);
 $white-grey: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(208, 208, 208, 1) 100%);
-$blue-cyan: linear-gradient(180deg, rgb(0, 255, 240) 0%, rgb(0, 202, 153) 100%);
-$blue-cyan-reverse: linear-gradient(180deg, rgb(0, 202, 153) 0%, rgb(0, 255, 240) 100%);
+$blue-cyan: linear-gradient(180deg, rgb(64, 255, 246) 0%, rgb(49, 189, 140) 50%);
+$blue-cyan-reverse: linear-gradient(180deg, rgb(49, 189, 140) 0%, rgb(64, 255, 246) 50%);
+// $blue-cyan: linear-gradient(180deg, rgb(0, 255, 240) 0%, rgb(0, 202, 153) 100%);
+// $blue-cyan-reverse: linear-gradient(180deg, rgb(0, 202, 153) 0%, rgb(0, 255, 240) 100%);
 
 // Global Fonts
 $barlow: 'Barlow', sans-serif;
 $roboto: 'Roboto', sans-serif;
 $roboto-mono: 'Roboto', sans-serif;
+$dm-sans: 'DM Sans', sans-serif;
 // $roboto-mono: 'Roboto Mono', monospace;
 
 // Typography
@@ -111,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     position: relative;
     white-space: nowrap;
-    background: none;
+    background: $l-darkgrey;
     transition: all 0.8s ease;
     
     &:hover {
@@ -199,26 +203,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .glow {
-    font-weight: 1000;
+    font-weight: 500;
     background-image: $blue-cyan;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: glowing 5s infinite;
 
     @keyframes glowing {
-        0% {
-            color: $cyan;
-            text-shadow: 0 0 1px rgba(0, 255, 194, 0.3), 0 0 2px rgba(0, 255, 194, 0.3), 0 0 3px rgba(0, 255, 194, 0.3), 0 0 4px rgba(0, 255, 194, 0.3), 0 0 5px rgba(0, 255, 194, 0.3);
+        // Near-Grey Cyan Color
+        $glow-color: rgb(180, 230, 227); 
+
+        // 0% and 100% (Subtle Glow State)
+        0%, 100% {
+            color: $glow-color;
+            // Shadow is the glow color, with low opacity (0.15) for a whisper-soft effect
+            text-shadow: 
+                0 0 1px rgba(180, 230, 227, 0.15), 
+                0 0 2px rgba(180, 230, 227, 0.15), 
+                0 0 3px rgba(180, 230, 227, 0.15), 
+                0 0 4px rgba(180, 230, 227, 0.1), 
+                0 0 5px rgba(180, 230, 227, 0.05);
         }
+        
+        // 50% (Peak Glow State)
         50% {
-            color: #00FFC2;
-            text-shadow: 0 0 1px rgba(0, 255, 194, 0.5), 0 0 2px rgba(0, 255, 194, 0.5), 0 0 3px rgba(0, 255, 194, 0.5), 0 0 4px rgba(0, 255, 194, 0.5), 0 0 5px rgba(0, 255, 194, 0.5);
+            color: $glow-color;
+            // Shadow is the glow color, with slightly higher opacity (0.3) for a gentle pulse
+            text-shadow: 
+                0 0 1px rgba(180, 230, 227, 0.3), 
+                0 0 2px rgba(180, 230, 227, 0.3), 
+                0 0 3px rgba(180, 230, 227, 0.25), 
+                0 0 4px rgba(180, 230, 227, 0.2), 
+                0 0 5px rgba(180, 230, 227, 0.15);
         }
-        100% {
-            color: $cyan;
-            text-shadow: 0 0 1px rgba(0, 255, 194, 0.3), 0 0 2px rgba(0, 255, 194, 0.3), 0 0 3px rgba(0, 255, 194, 0.3), 0 0 4px rgba(0, 255, 194, 0.3), 0 0 5px rgba(0, 255, 194, 0.3);
-        }
-    }           
+    }
+
+    // @keyframes glowing {
+    //     0% {
+    //         color: $cyan;
+    //         text-shadow: 0 0 1px rgba(0, 255, 194, 0.3), 0 0 2px rgba(0, 255, 194, 0.3), 0 0 3px rgba(0, 255, 194, 0.3), 0 0 4px rgba(0, 255, 194, 0.3), 0 0 5px rgba(0, 255, 194, 0.3);
+    //     }
+    //     50% {
+    //         color: #00FFC2;
+    //         text-shadow: 0 0 1px rgba(0, 255, 194, 0.5), 0 0 2px rgba(0, 255, 194, 0.5), 0 0 3px rgba(0, 255, 194, 0.5), 0 0 4px rgba(0, 255, 194, 0.5), 0 0 5px rgba(0, 255, 194, 0.5);
+    //     }
+    //     100% {
+    //         color: $cyan;
+    //         text-shadow: 0 0 1px rgba(0, 255, 194, 0.3), 0 0 2px rgba(0, 255, 194, 0.3), 0 0 3px rgba(0, 255, 194, 0.3), 0 0 4px rgba(0, 255, 194, 0.3), 0 0 5px rgba(0, 255, 194, 0.3);
+    //     }
+    // }           
 }
 
 .scroll-button {
@@ -343,9 +376,9 @@ body {
     --sb-track-color: #212121;
     --sb-thumb-color: #8ff5e1aa;
     --sb-size: 7.5px;
-    
-    scrollbar-color: var(--sb-thumb-color) 
-                        var(--sb-track-color);
+    scrollbar-color: #8ff5e1aa;
+    // scrollbar-color: var(--sb-thumb-color) 
+    //                     var(--sb-track-color);
 }
       
 body::-webkit-scrollbar {
@@ -663,7 +696,7 @@ body::-webkit-scrollbar-thumb {
             font: {
                 family: $barlow;
                 size: 60px;
-                weight: 1000;
+                weight: 700;
             }
             span {
                 font: {
@@ -2886,7 +2919,7 @@ body::-webkit-scrollbar-thumb {
             right: 80px;
             top: 100px;
         }
-        height: 300px;
+        // height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
