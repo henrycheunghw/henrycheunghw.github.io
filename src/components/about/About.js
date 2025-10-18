@@ -46,13 +46,13 @@ const About = () => {
                                     Hi! I'm Henry!
                                 </h3>
                                 <p>
-                                    I'm a versatile UI/UX Designer passionate about crafting human-centric products that solve complex communication challenges. My unique background in storytelling, front-end development, and generative AI allows me to approach design from a holistic perspective, balancing user needs with technical feasibility.
+                                    Acting as the UX Team Lead at Lifeguard Digital Health, I'm passionate about crafting human-centric products that solve complex challenges in highly-collaborative, fast-paced environments. My unique background in storytelling, front-end development, and generative AI allows me to approach design holistically.
                                 </p>
                                 <p>
-                                    At Lifeguard Digital Health, I designed user experiences for products that impacted 70,000+ users and were credited with saving over 270 lives. I also led a team in creating a design system that streamlined development handoff and integrated generative AI into our workflow, boosting design efficiency by 50%.
+                                    At Lifeguard Digital Health, I designed user experiences for products that impacted 70,000+ users and were credited with saving over 280 lives. I also led a team in creating a design system that streamlined development and integrated generative AI into our workflow, boosting design efficiency by 50%.
                                 </p>
                                 <p>
-                                    As a seasoned content creator, I've leveraged visual storytelling to build an online audience of 6,500+ followers with 3.5 million+ views. I excel at creating designs that are not only functional but also engaging and impactful.
+                                    As a seasoned content creator, I've leveraged visual storytelling to build an online audience of 6,500+ followers with 3.5 million+ views. I excel at creating designs that are not only functional but also deeply engaging and impactful.
                                 </p>
                                 <p>
                                     I am a proactive problem-solver dedicated to creating meaningful, data-informed experiences and am always eager to take on a new challenge.
@@ -64,7 +64,7 @@ const About = () => {
                                     className="contact-me-btn button" 
                                     onClick={navigateToLinkedIn}
                                 >
-                                    👋 Connect with Me!
+                                    Connect with Me
                                 </button>
                             </div>
 
@@ -159,7 +159,7 @@ const About = () => {
                     to="/skills" 
                     className="button view-others"
                 >
-                    ✨ View My Skills!
+                    View My Skills
                 </NavLink>
             </div>
         </div>
