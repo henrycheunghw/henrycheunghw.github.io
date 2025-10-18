@@ -60,7 +60,7 @@ const Header = () => {
 				</li>
 				<li>
 					<a
-						href="https://drive.google.com/file/d/19hRQFvR27DnXeirE_xgH7kouH-hynOLi/view?usp=sharing"
+						href="https://drive.google.com/file/d/1_qbmyeOmDkPCWl5MYpMw59UvLYDJxaXW/view?usp=sharing"
 						target="_blank"
 						className="nav-item"
 						onClick={() => trackNavClick("Resume")}
