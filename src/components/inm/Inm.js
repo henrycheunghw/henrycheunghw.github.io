@@ -252,7 +252,7 @@ const Inm = () => {
                     to="/Askaiden" 
                     className="button view-others"
                 >
-                    😎 Next Cool Project!
+                    Next Cool Project
                 </NavLink>
             </div>
         </div>

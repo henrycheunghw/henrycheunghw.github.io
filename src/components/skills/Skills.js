@@ -125,7 +125,7 @@ const Skills = () => {
                                         to="/Knapsackx" 
                                         className="button"
                                     >
-                                        Show Me! 😍
+                                        Show Me
                                     </NavLink>
                                 </div>
                                 <p>
@@ -173,7 +173,7 @@ const Skills = () => {
                                         to="/Askaiden" 
                                         className="button"
                                     >
-                                        Show Me! 😍
+                                        Show Me
                                     </NavLink>
                                 </div>
                                 <p>
@@ -215,7 +215,7 @@ const Skills = () => {
                                         to="/Mymori" 
                                         className="button"
                                     >
-                                        Show Me! 😍
+                                        Show Me
                                     </NavLink>
                                 </div>
                                 <p>
@@ -252,7 +252,7 @@ const Skills = () => {
 
             <div className="grid">
                 <NavLink onClick={scrollToTop} to="/" className="button view-others">
-                    😎 View My Projects!
+                    View My Projects
                 </NavLink>
             </div>
         </div>

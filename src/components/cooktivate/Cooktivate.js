@@ -451,7 +451,7 @@ const Cooktivate = () => {
                     to="/Inm" 
                     className="button view-others"
                 >
-                    😎 Next Cool Project!
+                    Next Cool Project
                 </NavLink>
             </div>
         </div>

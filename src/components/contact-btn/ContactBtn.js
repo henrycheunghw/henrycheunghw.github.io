@@ -13,7 +13,7 @@ const ContactButton = () => {
 
   return (
     <button className="contact-button" onClick={navigateToLinkedIn}>
-        👋 Connect with Me!
+        Connect with Me
     </button>
   );
 };

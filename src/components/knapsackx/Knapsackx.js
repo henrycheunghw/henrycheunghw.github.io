@@ -501,7 +501,7 @@ const Knapsackx = () => {
                     to="/Cooktivate" 
                     className="button view-others"
                 >
-                    😎 Next Cool Project!
+                    Next Cool Project
                 </NavLink>
             </div>
         </div>

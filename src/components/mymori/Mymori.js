@@ -298,7 +298,7 @@ const Mymori = () => {
                     to="/Knapsackx" 
                     className="button view-others"
                 >
-                    😎 Next Cool Project!
+                    Next Cool Project
                 </NavLink>
             </div>
         </div>

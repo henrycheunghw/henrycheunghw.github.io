@@ -259,7 +259,7 @@ const Askaiden = () => {
                     to="/Mymori" 
                     className="button view-others"
                 >
-                    😎 Next Cool Project!
+                    Next Cool Project
                 </NavLink>
             </div>
         </div>

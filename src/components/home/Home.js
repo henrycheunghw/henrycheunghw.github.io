@@ -108,11 +108,11 @@ const Home = () => {
                         <h1 className="big-title name">Hi! I'm Henry,</h1>
                         <div className="components">
                             <img loading="lazy" src={Components} alt="Components"/>
-                            <h3><span className="glow">UI/UX Designer + Storyteller</span></h3>
+                            <h3><span className="glow">Product Designer + Storyteller</span></h3>
                         </div>
                         <div className="effects first-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>Storytelling with 9+ years of creative experience</p>
+                            <p>UI/UX with 9+ years of storytelling experience</p>
                         </div>
                         <div className="effects second-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
@@ -120,12 +120,12 @@ const Home = () => {
                         </div>
                         <div className="effects third-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>Accelerating UX by 50%+ with <span className="glow">AI-Driven</span> solutions</p>
+                            <p>Accelerating Design by 50%+ with <span className="glow">AI-Driven</span> solutions</p>
                         </div>
                         <div className="quote">
                             <p className="quote-symbol-1">❛❛</p>
                             <p>
-                                I believe that design can create meaningful connections among those who matter most to us!
+                                Design can create meaningful connections among those who matter most to us!
                             </p>
                             <p className="quote-symbol-2">❜❜</p>
                         </div>
@@ -135,7 +135,7 @@ const Home = () => {
                                 className="button show-me-btn"
                                 onClick={handleImpressClick}
                             >
-                                ✨ Impress Me!
+                                See My Work
                             </NavLink>
                             <img loading="lazy" src={Riceball} alt="Riceball" className="riceball" />
                         </div>
@@ -444,7 +444,7 @@ const Home = () => {
                     to="/About" 
                     className="button view-others"
                 >
-                    😆 Know More About Me!
+                    Know More About Me
                 </NavLink>
             </div>
         </div>
