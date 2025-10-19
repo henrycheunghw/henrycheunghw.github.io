@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d1b31c95.css",
-    "main.js": "/static/js/main.bae09b02.js",
+    "main.js": "/static/js/main.13673829.js",
     "static/js/787.eb1c1c13.chunk.js": "/static/js/787.eb1c1c13.chunk.js",
     "static/media/knapsackx-powerpoint.mp4": "/static/media/knapsackx-powerpoint.0948be3edcd7452e3bd5.mp4",
     "static/media/mymori-gamification.mp4": "/static/media/mymori-gamification.1c30462634c4b8cf452e.mp4",
@@ -163,11 +163,11 @@
     "static/media/miro.svg": "/static/media/miro.b1457362af3180ffcdb69554a0ff0378.svg",
     "static/media/components.svg": "/static/media/components.17568cc69a7f21c7dd3187498d6f2921.svg",
     "main.d1b31c95.css.map": "/static/css/main.d1b31c95.css.map",
-    "main.bae09b02.js.map": "/static/js/main.bae09b02.js.map",
+    "main.13673829.js.map": "/static/js/main.13673829.js.map",
     "787.eb1c1c13.chunk.js.map": "/static/js/787.eb1c1c13.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1b31c95.css",
-    "static/js/main.bae09b02.js"
+    "static/js/main.13673829.js"
   ]
 }
