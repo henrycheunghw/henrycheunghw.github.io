@@ -93,7 +93,7 @@ const Knapsackx = () => {
                         <div className="intro-title">
                             <h1>Knapsack-X Mobile App Redesign</h1>
                         </div>
-                        <div className="intro-content"><p>During my internship at Knapsack-X, as the sole UI/UX designer, I led the redesign of a Canadian mobile gaming app. Integrating play-to-earn and AI features, I conducted user research, crafted wireframes, prototypes, and generated graphic assets using generative AI. Through comprehensive testing and collaborative reviews, I ensured a seamless transition to development by creating a detailed design system.</p></div>
+                        <div className="intro-content"><p>As the Sole UI/UX Designer at Knapsack-X, I led the total redesign of a mobile gaming app, strategically integrating play-to-earn features and modern AI technology. My work covered the full spectrum, from user research and designing over 100 screens to delivering a comprehensive design system for developer handoff.</p></div>
                         <div className="category"><p>Role</p></div>
                         <div className="detail"><p>UI/UX Design, UX Research, Usability Testing, Design System, Prompt Engineering</p></div>
                         <div className="category"><p>Tools</p></div>
