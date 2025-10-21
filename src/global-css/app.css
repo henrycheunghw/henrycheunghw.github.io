@@ -11,7 +11,7 @@ h2 {
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 34px;
 }
 
 h4 {
@@ -28,7 +28,7 @@ h6 {
 
 p {
   font-size: 18px;
-  color: #a5a5a5;
+  color: #8e8e8e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,9 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .button:hover {
   transform: translateY(-1px);
-  background: #a8f2e2;
+  background: linear-gradient(45deg, rgb(49, 189, 140) 0%, rgb(55, 232, 211) 100%);
   color: #0d0d0d;
-  border: 1px solid #a8f2e2;
+  border: none;
 }
 .button:active {
   transform: translateY(1px);
@@ -160,6 +160,14 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(180, 230, 227);
     text-shadow: 0 0 1px rgba(180, 230, 227, 0.3), 0 0 2px rgba(180, 230, 227, 0.3), 0 0 3px rgba(180, 230, 227, 0.25), 0 0 4px rgba(180, 230, 227, 0.2), 0 0 5px rgba(180, 230, 227, 0.15);
   }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, rgb(49, 189, 140) 0%, rgb(55, 232, 211) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .scroll-button {
@@ -402,12 +410,15 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.2s ease-in-out;
 }
 .header ul li .nav-item.active {
-  color: #a8f2e2;
+  background: linear-gradient(45deg, rgb(49, 189, 140) 0%, rgb(55, 232, 211) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .header ul li .nav-item:hover,
 .header ul li .nav-item .menu-btn:hover {
   transform: translateY(-1px);
-  color: #a8f2e2;
 }
 .header ul li .nav-item:active,
 .header ul li .nav-item .menu-btn:active {
@@ -864,7 +875,14 @@ body::-webkit-scrollbar-thumb {
   background: rgba(143, 245, 225, 0.03);
 }
 .projects .projects-details .projects:hover .project-title {
-  color: #a8f2e2;
+  /* 1. Set the background to the gradient */
+  background: linear-gradient(45deg, rgb(49, 189, 140) 0%, rgb(55, 232, 211) 100%);
+  /* 2. Clip the background to the text area (Standard and Webkit) */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* 3. Make the foreground text transparent so the gradient shines through */
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 .projects .projects-details .projects .project-info {
   display: flex;

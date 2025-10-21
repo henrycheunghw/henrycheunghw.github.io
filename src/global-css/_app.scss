@@ -9,7 +9,7 @@
 $d-darkgrey: #0d0d0d;
 $d-white: #fff;
 $l-lightgrey: #eee;
-$l-mildgrey: #a5a5a5;
+$l-mildgrey: #8e8e8e;
 $l-darkgrey: #212121;
 $l-mid-grey: #444;
 $l-lightblue: #98dfdc;
@@ -23,6 +23,8 @@ $blue-cyan: linear-gradient(180deg, rgb(64, 255, 246) 0%, rgb(49, 189, 140) 50%)
 $blue-cyan-reverse: linear-gradient(180deg, rgb(49, 189, 140) 0%, rgb(64, 255, 246) 50%);
 // $blue-cyan: linear-gradient(180deg, rgb(0, 255, 240) 0%, rgb(0, 202, 153) 100%);
 // $blue-cyan-reverse: linear-gradient(180deg, rgb(0, 202, 153) 0%, rgb(0, 255, 240) 100%);
+// From #60F785 (Green/Mint) to #5CBFF1 (Sky Blue)
+$green-blue-gradient: linear-gradient(45deg, rgb(49, 189, 140) 0%, rgb(55, 232, 211) 100%);
 
 // Global Fonts
 $barlow: 'Barlow', sans-serif;
@@ -39,7 +41,7 @@ h2 {
     font-size: 44px;
 }
 h3 {
-    font-size: 35px;
+    font-size: 34px;
 }
 h4 {
     font-size: 28px;
@@ -120,9 +122,9 @@ h1, h2, h3, h4, h5, h6 {
     
     &:hover {
         transform: translateY(-1px);
-        background: $cyan;
+        background: $green-blue-gradient;
         color: $d-darkgrey;
-        border: 1px solid $cyan;
+        border: none;
     }
     
     &:active {
@@ -252,6 +254,21 @@ h1, h2, h3, h4, h5, h6 {
     //         text-shadow: 0 0 1px rgba(0, 255, 194, 0.3), 0 0 2px rgba(0, 255, 194, 0.3), 0 0 3px rgba(0, 255, 194, 0.3), 0 0 4px rgba(0, 255, 194, 0.3), 0 0 5px rgba(0, 255, 194, 0.3);
     //     }
     // }           
+}
+
+.gradient-text {
+    // 1. Set the background to the gradient variable
+    background: $green-blue-gradient; 
+    
+    // 2. Clip the background only to the area of the text (WebKit/Chrome/Safari)
+    -webkit-background-clip: text; 
+    
+    // 3. Make the foreground text transparent so the background shows through
+    -webkit-text-fill-color: transparent; 
+    
+    // Fallback for non-WebKit browsers (limited support, but good practice)
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 .scroll-button {
@@ -545,13 +562,16 @@ body::-webkit-scrollbar-thumb {
                 transition: all 0.2s ease-in-out;
 
                 &.active {
-                    color: $cyan;
+                    background: $green-blue-gradient; 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent; 
+                    background-clip: text;
+                    text-fill-color: transparent;
                 }
                 
                 &:hover,
                 .menu-btn:hover {
-                transform: translateY(-1px);
-                color: $cyan;
+                    transform: translateY(-1px);
                 }
                 
                 &:active,
@@ -1112,7 +1132,16 @@ body::-webkit-scrollbar-thumb {
                 background: rgba(143, 245, 225, 0.03);
         
                 .project-title {
-                    color: $cyan;
+                    /* 1. Set the background to the gradient */
+                    background: $green-blue-gradient;
+                    
+                    /* 2. Clip the background to the text area (Standard and Webkit) */
+                    -webkit-background-clip: text; 
+                    background-clip: text; 
+                    
+                    /* 3. Make the foreground text transparent so the gradient shines through */
+                    -webkit-text-fill-color: transparent; 
+                    text-fill-color: transparent;
                 }
             }
         

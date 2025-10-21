@@ -219,7 +219,7 @@ const Skills = () => {
                                     </NavLink>
                                 </div>
                                 <p>
-                                    I’m an enthusiastic learner who wakes up at 5 AM every day to explore new skills and push my limits."
+                                    I’m an enthusiastic learner who wakes up at 5 AM every day to explore new skills and push my limits.
                                 </p>
                             </div>
                             <div className="card-items">

@@ -93,11 +93,11 @@ const Knapsackx = () => {
                         <div className="intro-title">
                             <h1>Knapsack-X Mobile App Redesign</h1>
                         </div>
-                        <div className="intro-content"><p>As the Sole UI/UX Designer at Knapsack-X, I led the total redesign of a mobile gaming app, strategically integrating play-to-earn features and modern AI technology. My work covered the full spectrum, from user research and designing over 100 screens to delivering a comprehensive design system for developer handoff.</p></div>
+                        <div className="intro-content"><p>As the sole UI/UX designer, I led the full redesign of a mobile gaming app, strategically integrating play to earn features. This involved designing over 100 screens and delivering a scalable design system. My work resulted in a highly intuitive UX validated by an exceptional 83.5 SUS score.</p></div>
                         <div className="category"><p>Role</p></div>
-                        <div className="detail"><p>UI/UX Design, UX Research, Usability Testing, Design System, Prompt Engineering</p></div>
+                        <div className="detail"><p>UI/UX Design, UX Research, Usability Testing, Design System, Generative AI</p></div>
                         <div className="category"><p>Tools</p></div>
-                        <div className="detail"><p>Figma, Figjam, Photoshop, Generative AI Design</p></div>
+                        <div className="detail"><p>Figma, Figjam, Photoshop, Leonardo AI, Stable Diffusion</p></div>
                         <div className="category"><p>Duration</p></div>
                         <div className="detail"><p>10 weeks</p></div>
                         <div className="category"><p>Time</p></div>
@@ -134,25 +134,19 @@ const Knapsackx = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Onboarding screens guide new users through the app's unique value proposition, enhancing user retention and setting clear expectations.
+                                Onboarding establishes value, improving user retention.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Tutorial screens offer intuitive assistance, ensuring first-time users effortlessly grasp the user interface.
+                                Tutorials offer intuitive assistance, ensuring effortless interface use.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Intuitive tooltips empower users to understand UI elements with ease.
-                            </p>
-                        </div>
-                        <div className="bullet-pts">
-                            <p className="bullet">►</p>
-                            <p>
-                                Responsive click feedback provides clear interaction cues, enhancing user confidence and engagement.
+                                Tooltips and click feedback empower users with clear cues, boosting confidence.
                             </p>
                         </div>
                     </div>
@@ -177,31 +171,19 @@ const Knapsackx = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Clear instructions guide users on how to participate in paid games, eliminating confusion.
+                                Eliminated confusion for play to earn games, preventing user errors.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Confirmation pop-ups prevent user errors, reducing frustration.
+                                Fostered user trust by confirming all high value game outcomes.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Post-game pop-ups confirm game outcomes, fostering user trust and transparency.
-                            </p>
-                        </div>
-                        <div className="bullet-pts">
-                            <p className="bullet">►</p>
-                            <p>
-                                Most visuals crafted by cutting-edge text-to-image AI, aligning seamlessly with the futuristic brand vibe.
-                            </p>
-                        </div>
-                        <div className="bullet-pts">
-                            <p className="bullet">►</p>
-                            <p>
-                                Vibrant cyberpunk colours and fonts evoke excitement and playfulness throughout the interface.
+                                Executed the brand vision using text to image AI and vibrant colors.
                             </p>
                         </div>
                     </div>
@@ -216,25 +198,19 @@ const Knapsackx = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Intuitive sign-up and sign-in processes streamline user access.
+                                Streamlined user access with intuitive sign up and sign in processes.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Norm-following icons enhance user recognition and ease of navigation.
+                                Optimized information architecture to intuitively organize all screen content.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Information architecture organizes screen content intuitively, catering to the majority of users' expectations.
-                            </p>
-                        </div>
-                        <div className="bullet-pts">
-                            <p className="bullet">►</p>
-                            <p>
-                                Engaging animations such as progress bars and spinners reduce perceived wait times, ensuring a seamless user experience.
+                                Enhanced perceived performance and reduced wait times using engaging animations.
                             </p>
                         </div>
                     </div>
@@ -259,19 +235,19 @@ const Knapsackx = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Light theme option caters to users preferring a brighter interface, enhancing personalization.
+                                Enhanced personalization by delivering an optional light theme interface.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Consistent variations in font sizes, text opacity, and relative positioning establish a clear visual hierarchy.
+                                Established a clear visual hierarchy using consistent variations in font sizes and text opacity.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Adherence to "AAA" color contrast ratio guidelines ensures optimal accessibility, aligning with Web Content Accessibility Guidelines.
+                                Ensured optimal accessibility by strictly adhering to AAA color contrast guidelines.
                             </p>
                         </div>
                     </div>

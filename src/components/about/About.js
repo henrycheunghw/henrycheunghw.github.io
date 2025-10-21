@@ -42,7 +42,7 @@ const About = () => {
                         <div className="about-text">
                             <div className="about-intro">
                                 <h1 className="title about-title name">About Me</h1>
-                                <h3 className="hi-sentence glow">
+                                <h3 className="hi-sentence gradient-text">
                                     Hi! I'm Henry!
                                 </h3>
                                 <p>
@@ -57,7 +57,7 @@ const About = () => {
                                 <p>
                                     I am a proactive problem-solver dedicated to creating meaningful, data-informed experiences and am always eager to take on a new challenge.
                                 </p>
-                                <p className="bold-text glow">
+                                <p className="bold-text gradient-text">
                                     I leverage AI to place human at the core, multiplying empathy with efficiency.
                                 </p>
                                 <button 

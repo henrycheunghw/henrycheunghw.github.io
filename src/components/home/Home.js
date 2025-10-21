@@ -108,7 +108,7 @@ const Home = () => {
                         <h1 className="big-title name">Hi! I'm Henry,</h1>
                         <div className="components">
                             <img loading="lazy" src={Components} alt="Components"/>
-                            <h3><span className="glow">Product Designer + Storyteller</span></h3>
+                            <h3><span className="gradient-text">Product Designer + Storyteller</span></h3>
                         </div>
                         <div className="effects first-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
@@ -120,11 +120,11 @@ const Home = () => {
                         </div>
                         <div className="effects third-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>Accelerating Design by 50%+ with <span className="glow">AI-Driven</span> solutions</p>
+                            <p>Accelerating Design by 50%+ with <span className="gradient-text">AI-Driven</span> solutions</p>
                         </div>
                         <div className="quote">
                             <p className="quote-symbol-1">❛❛</p>
-                            <p className="glow">
+                            <p>
                                 I leverage AI to place human at the core, multiplying empathy with efficiency.
                             </p>
                             <p className="quote-symbol-2">❜❜</p>
@@ -298,7 +298,7 @@ const Home = () => {
                     <div className="projects askaiden">
                         <div className="project-info">
                             <h3 className="project-title">AskAiden</h3>
-                            <p>Publicly launched AI-powered education search website designed to simplify prompt writing and transform the AI search experience, collaborating with developers leveraging the ChatGPT API</p>
+                            <p>Publicly launched AI-powered education search website designed to simplify prompt writing and transform the AI search experience, collaborating with developers leveraging the ChatGPT API.</p>
                             <div className="stacks-container">
                                 <img loading="lazy" src={Figma}></img>
                                 <img loading="lazy" src={Illustrator}></img>
