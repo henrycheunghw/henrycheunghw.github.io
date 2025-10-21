@@ -58,7 +58,7 @@ const About = () => {
                                     I am a proactive problem-solver dedicated to creating meaningful, data-informed experiences and am always eager to take on a new challenge.
                                 </p>
                                 <p className="bold-text glow">
-                                    I believe that design can create meaningful connections among those who matter most to us!
+                                    I leverage AI to place human at the core, multiplying empathy with efficiency.
                                 </p>
                                 <button 
                                     className="contact-me-btn button" 

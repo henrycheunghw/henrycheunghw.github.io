@@ -124,8 +124,8 @@ const Home = () => {
                         </div>
                         <div className="quote">
                             <p className="quote-symbol-1">❛❛</p>
-                            <p>
-                                Design can create meaningful connections among those who matter most to us!
+                            <p className="glow">
+                                I leverage AI to place human at the core, multiplying empathy with efficiency.
                             </p>
                             <p className="quote-symbol-2">❜❜</p>
                         </div>
