@@ -119,7 +119,7 @@ const Skills = () => {
                         <div className={`skills-cards uiux-card grid ${activeSkill === 'uiux' ? 'active' : ''}`} ref={uiuxCardRef}>
                             <div className="card-text">
                                 <div className="card-title">
-                                    <h2>UI/UX Design</h2>
+                                    <h2 className="gradient-text">UI/UX Design</h2>
                                     <NavLink 
                                         onClick={() => trackShowMe("show me - UI/UX Designer - Skills Page")} 
                                         to="/Knapsackx" 
@@ -167,7 +167,7 @@ const Skills = () => {
                         <div className={`skills-cards web-dev-card grid ${activeSkill === 'web-dev' ? 'active' : ''}`} ref={webDevCardRef}>
                             <div className="card-text">
                                 <div className="card-title">
-                                    <h2>Development</h2>
+                                    <h2 className="gradient-text">Development</h2>
                                     <NavLink 
                                         onClick={() => trackShowMe("show me - Web Developer - Skills Page")} 
                                         to="/Askaiden" 
@@ -209,7 +209,7 @@ const Skills = () => {
                         <div className={`skills-cards explorer-card grid ${activeSkill === 'explorer' ? 'active' : ''}`} ref={explorerCardRef}>
                             <div className="card-text">
                                 <div className="card-title">
-                                    <h2>Proactive Learning</h2>
+                                    <h2 className="gradient-text">Proactive Learning</h2>
                                     <NavLink 
                                         onClick={() => trackShowMe("show me - Everyday Explorer - Skills Page")} 
                                         to="/Mymori" 
