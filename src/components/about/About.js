@@ -46,18 +46,18 @@ const About = () => {
                                     Hi! I'm Henry!
                                 </h3>
                                 <p>
-                                    Acting as the UX Team Lead at Lifeguard Digital Health, I'm passionate about crafting human-centric products that solve complex challenges in highly-collaborative, fast-paced environments. My unique background in storytelling, front-end development, and generative AI allows me to approach design holistically.
+                                    Acting as the <span class="extra-bold-white">UX Team Lead</span> at Lifeguard Digital Health, I'm passionate about crafting human-centric products that solve complex challenges in highly-collaborative, fast-paced environments. My unique background in <span class="extra-bold-white">storytelling</span>, <span class="extra-bold-white">front-end development</span>, and <span class="extra-bold-white">generative AI</span> allows me to approach design holistically.
                                 </p>
                                 <p>
-                                    At Lifeguard Digital Health, I designed user experiences for products that impacted 70,000+ users and were credited with saving over 280 lives. I also led a team in creating a design system that streamlined development and integrated generative AI into our workflow, boosting design efficiency by 50%.
+                                    At Lifeguard Digital Health, I designed user experiences for products that impacted 70,000+ users and were credited with saving 280+ lives. I also led a team in creating a design system that streamlined development and integrated generative AI into our workflow, <span class="extra-bold-white">boosting design efficiency by 50%</span>.
                                 </p>
                                 <p>
-                                    As a seasoned content creator, I've leveraged visual storytelling to build an online audience of 6,500+ followers with 3.5 million+ views. I excel at creating designs that are not only functional but also deeply engaging and impactful.
+                                    As a seasoned content creator, I've leveraged visual storytelling to <span class="extra-bold-white">publish 6 books</span>, building an online audience of 6,500+ followers with 3.5 million+ views. I excel at creating designs that are not only functional but also deeply engaging and impactful.
                                 </p>
                                 <p>
                                     I am a proactive problem-solver dedicated to creating meaningful, data-informed experiences and am always eager to take on a new challenge.
                                 </p>
-                                <p className="bold-text gradient-text">
+                                <p className="extra-bold-white gradient-text">
                                     I leverage AI to place human at the core, multiplying empathy with efficiency.
                                 </p>
                                 <button 
@@ -70,37 +70,37 @@ const About = () => {
 
                             <div className="about-experience">
                                 <h2 className="about-titles">Experience</h2>
-                                <p className="bold-text about-subtitles">UX/UI Designer</p>
+                                <p className="extra-bold-white about-subtitles">UX/UI Designer</p>
                                 <p>Lifeguard Digital Health</p>
-                                <p className="bold-text about-subtitles">UX/UI Designer - Internship</p>
+                                <p className="extra-bold-white about-subtitles">UX/UI Designer Intern</p>
                                 <p>Knapsack-X</p>
-                                <p className="bold-text about-subtitles">UI/UX Graphic Designer - Volunteer</p>
+                                <p className="extra-bold-white about-subtitles">UI/UX Graphic Designer</p>
                                 <p>Empowered Futures</p>
-                                <p className="bold-text about-subtitles">UI/UX Designer</p>
-                                <p>WaffleHacks 2023 by Major League Hacking (MLH)</p>
-                                <p className="bold-text about-subtitles">Set Representative</p>
+                                <p className="extra-bold-white about-subtitles">Guest Panelist, New Media Design & Web Development</p>
                                 <p>British Columbia Institute of Technology</p>
-                                <p className="bold-text about-subtitles">Nomination for the 13th Hong Kong Emerging Writer Award</p>
+                                <p className="extra-bold-white about-subtitles">Set Representative, New Media Design & Web Development</p>
+                                <p>British Columbia Institute of Technology</p>
+                                <p className="extra-bold-white about-subtitles">Nomination for the 13th Hong Kong Emerging Writer Award</p>
                                 <p>Radio Television Hong Kong (RTHK)</p>
-                                <p className="bold-text about-subtitles">Guest Speaker for Hong Kong Book Fair 2017</p>
+                                <p className="extra-bold-white about-subtitles">Guest Speaker for Hong Kong Book Fair 2017</p>
                                 <p>Hong Kong Trade Development Council</p>
                             </div>
 
                             <div className="about-education">
                                 <h2 className="about-titles">Education</h2>
                                 <p className="about-subtitles">
-                                    <span className="bold-text">New Media Design and Web Development, Diploma</span> - Currently Enrolled
+                                    <span className="extra-bold-white">New Media Design and Web Development, Diploma</span> - Currently Enrolled
                                 </p>
                                 <p>British Columbia Institute of Technology, Vancouver BC</p>
                                 <p className="about-subtitles">
-                                    <span className="bold-text">Bachelor of Social Science, Government and Public Administration</span> - Sep 2014 - May 2018
+                                    <span className="extra-bold-white">Bachelor of Social Science, Government and Public Administration</span> - Sep 2014 - May 2018
                                 </p>
                                 <p>The Chinese University of Hong Kong, Hong Kong</p>
                             </div>
 
                             <div className="about-certification">
                                 <h2 className="about-titles">Certification</h2>
-                                <p className="bold-text about-subtitles">Coursera</p>
+                                <p className="extra-bold-white about-subtitles">Coursera</p>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
                                     <p>Google UX Design</p>
@@ -113,7 +113,11 @@ const About = () => {
                                     <p className="bullet">►</p>
                                     <p>GenAI for UX Designers</p>
                                 </div>
-                                <p className="bold-text about-subtitles">LinkedIn Learning</p>
+                                <p className="extra-bold-white about-subtitles">LinkedIn Learning</p>
+                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
+                                    <p>The AI-Driven Product Designer</p>
+                                </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
                                     <p>Career Essentials in Generative AI by Microsoft and LinkedIn</p>

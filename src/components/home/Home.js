@@ -112,15 +112,15 @@ const Home = () => {
                         </div>
                         <div className="effects first-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>UI/UX with 9+ years of storytelling experience</p>
+                            <p>UI/UX with 9+ years of Storytelling Experience</p>
                         </div>
                         <div className="effects second-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>Design-to-Code with front-end skills</p>
+                            <p>Design-to-Code with Front-End Skills</p>
                         </div>
                         <div className="effects third-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>Accelerating Design by 50%+ with <span className="gradient-text">AI-Driven</span> solutions</p>
+                            <p>Accelerating Design by 50%+ with <span className="gradient-text">AI-Driven</span> Solutions</p>
                         </div>
                         <div className="quote">
                             <p className="quote-symbol-1">❛❛</p>
