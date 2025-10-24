@@ -89,7 +89,7 @@ const About = () => {
                             <div className="about-education">
                                 <h2 className="about-titles">Education</h2>
                                 <p className="about-subtitles">
-                                    <span className="extra-bold-white">New Media Design and Web Development, Diploma</span> - Currently Enrolled
+                                    <span className="extra-bold-white">New Media Design and Web Development, Diploma</span> - Sep 2022 - Mar 2024
                                 </p>
                                 <p>British Columbia Institute of Technology, Vancouver BC</p>
                                 <p className="about-subtitles">
