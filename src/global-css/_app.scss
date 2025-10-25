@@ -399,6 +399,18 @@ body {
     --sb-thumb-color: #8ff5e1aa;
     --sb-size: 7.5px;
     scrollbar-color: #8ff5e1aa;
+
+      &::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.07' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23noiseFilter)'/></svg>");
+        background-repeat: repeat;
+        background-size: 30px 30px;
+        opacity: 0.05; // subtle overlay
+        pointer-events: none;
+        z-index: 9999;
+    }
     // scrollbar-color: var(--sb-thumb-color) 
     //                     var(--sb-track-color);
 }
