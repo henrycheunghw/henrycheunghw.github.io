@@ -420,6 +420,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  font-weight: 700;
 }
 .header ul li .nav-item:hover,
 .header ul li .nav-item .menu-btn:hover {

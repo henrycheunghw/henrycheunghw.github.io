@@ -112,7 +112,7 @@ const Home = () => {
                         </div>
                         <div className="effects first-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>
-                            <p>UI/UX with 9+ years of Storytelling Experience</p>
+                            <p>UI/UX with 9+ years in Storytelling</p>
                         </div>
                         <div className="effects second-effect">
                             <img loading="lazy" src={Effects} alt="Effects"/>

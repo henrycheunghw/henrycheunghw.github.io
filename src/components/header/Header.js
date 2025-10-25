@@ -34,10 +34,12 @@ const Header = () => {
 				<li>
 					<NavLink
 						to="/"
-						className="nav-item"
+						className={({ isActive }) => 
+							isActive ? "nav-item active" : "nav-item"
+						}
 						onClick={() => trackNavClick("Projects")}
 					>
-						Projects
+					Projects
 					</NavLink>
 				</li>
 				<li>

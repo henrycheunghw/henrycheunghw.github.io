@@ -46,7 +46,7 @@ const About = () => {
                                     Hi! I'm Henry!
                                 </h3>
                                 <p>
-                                    Acting as the <span class="extra-bold-white">UX Team Lead</span> at Lifeguard Digital Health, I'm passionate about crafting human-centric products that solve complex challenges in highly-collaborative, fast-paced environments. My unique background in <span class="extra-bold-white">storytelling</span>, <span class="extra-bold-white">front-end development</span>, and <span class="extra-bold-white">generative AI</span> allows me to approach design holistically.
+                                    Acting as the <span class="extra-bold-white">UI/UX Team Lead</span> at a fast-paced start-up, I'm passionate about crafting human-centric products that solve complex challenges in highly-collaborative, fast-paced environments. My unique background in <span class="extra-bold-white">storytelling</span>, <span class="extra-bold-white">front-end development</span>, and <span class="extra-bold-white">generative AI</span> allows me to approach design holistically.
                                 </p>
                                 <p>
                                     At Lifeguard Digital Health, I designed user experiences for products that impacted 70,000+ users and were credited with saving 280+ lives. I also led a team in creating a design system that streamlined development and integrated generative AI into our workflow, <span class="extra-bold-white">boosting design efficiency by 50%</span>.
@@ -76,6 +76,8 @@ const About = () => {
                                 <p>Knapsack-X</p>
                                 <p className="extra-bold-white about-subtitles">UI/UX Graphic Designer</p>
                                 <p>Empowered Futures</p>
+                                <p className="extra-bold-white about-subtitles">AI Trainer</p>
+                                <p>Outlier</p>
                                 <p className="extra-bold-white about-subtitles">Guest Panelist, New Media Design & Web Development</p>
                                 <p>British Columbia Institute of Technology</p>
                                 <p className="extra-bold-white about-subtitles">Set Representative, New Media Design & Web Development</p>
