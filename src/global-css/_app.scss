@@ -53,7 +53,7 @@ h6 {
     font-size: 18px;
 }
 p {
-    font-size: 18px;
+    font-size: 16px;
     color: $l-mildgrey;
 }
 
@@ -431,7 +431,7 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 1440px) {
     p {
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
@@ -714,7 +714,7 @@ body::-webkit-scrollbar-thumb {
         flex-direction: column;
         p {
             margin-top: 0;
-            font-size: 20px;
+            font-size: 18px;
         }
         .big-title {
             padding-top: 2rem;

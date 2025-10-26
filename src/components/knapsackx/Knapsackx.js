@@ -266,6 +266,19 @@ const Knapsackx = () => {
                     </p>
                 </div> */}
 
+                <div className="user-research-container writings-container grid">
+                    <h2 className="user-research-title">Core Challenge</h2>
+                    <h3 className="user-needs-title">User</h3>
+                    <p className="user-needs-content">
+                        Mobile gamers are increasingly seeking real money value for their time, but lack of trust is a major barrier that makes them insecure about engaging with money related gaming products. My mandate was to address this core issue by designing an experience that was not only interactive and engaging to attract this high value segment, but also fundamentally clear and trustworthy to build player confidence and drive sustained use of the platform's financial features.
+                    </p>
+
+                    <h3 className="user-problem-title">Business</h3>
+                    <p className="user-problem-content">
+                        The project had ambitious goals, but faced tight constraints including limited budget and scarce user feedback at the start. To deliver the necessary volume of interactive visuals and ensure a successful launch, I shifted the strategy. This required me to think strategically about resource allocation, leveraging innovative AI tools to generate assets quickly and prioritizing comprehensive usability testing later in the process.
+                    </p>
+                </div>
+
                 <div className="design-process-container writings-container grid">
                     <h2 className="user-research-title">Design Process</h2>
                     <div className="user-research-subtitle">
