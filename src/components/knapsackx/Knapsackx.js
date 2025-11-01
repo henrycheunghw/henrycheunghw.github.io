@@ -183,7 +183,7 @@ const Knapsackx = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Executed the brand vision using text to image AI and vibrant colors.
+                                Executed the brand vision using text to image AI and vibrant colours.
                             </p>
                         </div>
                     </div>
@@ -247,7 +247,7 @@ const Knapsackx = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Ensured optimal accessibility by strictly adhering to AAA color contrast guidelines.
+                                Ensured optimal accessibility by strictly adhering to AAA colour contrast guidelines.
                             </p>
                         </div>
                     </div>
@@ -270,12 +270,12 @@ const Knapsackx = () => {
                     <h2 className="user-research-title">Core Challenge</h2>
                     <h3 className="user-needs-title">User</h3>
                     <p className="user-needs-content">
-                        Mobile gamers are increasingly seeking real money value for their time, but lack of trust is a major barrier that makes them insecure about engaging with money related gaming products. My mandate was to address this core issue by designing an experience that was not only interactive and engaging to attract this high value segment, but also fundamentally clear and trustworthy to build player confidence and drive sustained use of the platform's financial features.
+                        Mobile gamers demand a real money return for their time, but lack of platform trust was the biggest barrier. Users felt insecure about engaging with these money features. My job was simple: design an experience that was not only engaging enough to pull this valuable user group in, but also absolutely transparent and trustworthy to secure their confidence and ensure players used the financial features long term.
                     </p>
 
                     <h3 className="user-problem-title">Business</h3>
                     <p className="user-problem-content">
-                        The project had ambitious goals, but faced tight constraints including limited budget and scarce user feedback at the start. To deliver the necessary volume of interactive visuals and ensure a successful launch, I shifted the strategy. This required me to think strategically about resource allocation, leveraging innovative AI tools to generate assets quickly and prioritizing comprehensive usability testing later in the process.
+                        Our project had ambitious goals, but faced real constraints: a limited budget and scarce early user feedback. To ensure we delivered the high volume of visuals needed for launch, I strategically shifted our resource allocation. This meant leveraging innovative AI tools for rapid asset creation, which freed up resources to focus heavily on comprehensive usability testing later in the design process.
                     </p>
                 </div>
 
@@ -283,7 +283,7 @@ const Knapsackx = () => {
                     <h2 className="user-research-title">Design Process</h2>
                     <div className="user-research-subtitle">
                         <p>
-                            As the sole UI/UX designer on the team during my 3-month internship, I took on the challenge of designing an entire app. To stay organized and productive, I broke down the process into six main phases:
+                            As the sole UI/UX designer, I designed the entire app in three months. I structured the end-to-end process into six focused phases to ensure efficiency.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -295,7 +295,7 @@ const Knapsackx = () => {
                     <h2 className="user-research-title">➊ Brainstorm</h2>
                     <div className="user-research-subtitle">
                         <p>
-                            To foster team collaboration, I crafted a PowerPoint presentation detailing my approach and proposed schedule for designing the app as the sole UI/UX specialist. This allowed for efficient feedback gathering and ensured alignment on design objectives.
+                            To foster team alignment, I proactively detailed my design approach and schedule. This ensured efficient feedback and shared objectives.
                         </p>
                     </div>
                     <div className="video-container">
@@ -310,7 +310,7 @@ const Knapsackx = () => {
                     <div className="user-research-subtitle">
                         <h3>Value Proposition Map</h3>
                         <p>
-                            To prioritize user needs, I created a value proposition map to align my design direction with the company's objectives, ensuring effective solutions for users' needs.
+                            I used a Value Proposition Map to prioritize user needs and strategically align design direction with company objectives.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -320,7 +320,7 @@ const Knapsackx = () => {
                     <div className="user-research-subtitle">
                         <h3>User Persona</h3>
                         <p>
-                            After finalizing the unique value proposition, I crafted user personas outlining pain points, tasks, and desired outcomes. This user-centric approach guided my design decisions, fostering empathy and meeting user needs effectively.
+                            I crafted user personas outlining pain points and desired outcomes. This user centric approach directly guided all design decisions.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -333,7 +333,7 @@ const Knapsackx = () => {
                     <div className="user-research-subtitle">
                         <h3>App Flow Diagram</h3>
                         <p>
-                            After understanding the app's purpose, I created an app flow diagram to organize content for both our team and users. It acted as a blueprint for wireframing, streamlining the design process.
+                            I created a comprehensive app flow diagram to organize content for both the team and users. This blueprint streamlined the entire design process.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -346,7 +346,7 @@ const Knapsackx = () => {
                     <div className="user-research-subtitle">
                         <h3>Wireframes</h3>
                         <p>
-                            With the UX strategy set, I moved to create wireframes in Figma, aligning with the app flow diagram. This helped establish the basic structure, gather feedback swiftly, and ensure alignment with objectives before advancing to high-fidelity prototyping.
+                            Using the flow diagram, I created wireframes in Figma to establish basic structure. This enabled swift feedback gathering and ensured quick alignment before high fidelity work.
                         </p>
                     </div>
                     <div className="video-container">
@@ -358,7 +358,7 @@ const Knapsackx = () => {
                     <div className="user-research-subtitle">
                         <h3>Moodboard & Style Guide</h3>
                         <p>
-                            The moodboard and style guide provide the initial visual direction. They propose design elements such as colors, typography, and UI components, ensuring consistency with the brand's cyberpunk, futuristic, gaming vibe in cyan and pink. Utilizing text-to-image generative AI, images are crafted to align with the brand's style and official website.
+                            I established the futuristic cyberpunk brand vibe with a style guide defining colours and typography. Crucially, I used text to image AI to craft all visuals, ensuring consistent brand alignment.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -372,7 +372,7 @@ const Knapsackx = () => {
                 <div className="prototype-container">
                     <h2>➍ Prototype</h2>
                     <p>
-                        I chose a high-fidelity prototype to closely resemble a real project, expanding on wireframes, a moodboard, and a style guide. Targeting young adults, the app features a cyberpunk, futuristic vibe. Prioritizing trust, I focused on clarity and security by maintaining consistent design elements, intuitive buttons, and providing thorough guidance like onboarding and tutorials. This aims to build user confidence, particularly given the app's monetized nature.
+                        I executed the final design using a high fidelity prototype to closely resemble the real product. Targeting young adults, the app features a cyberpunk, futuristic vibe. To secure user trust in the monetized features, I prioritized design clarity, security, and consistent elements, supported by thorough guidance like onboarding and tutorials.
                     </p>
                     <iframe
                         title="Figma Embed"
@@ -386,7 +386,7 @@ const Knapsackx = () => {
                     <div className="user-research-subtitle">
                         <h3>Figma Components</h3>
                         <p>
-                            I've created a variety of advanced Figma components to add animations and small interactive features to our detailed prototypes. This makes the prototype look and feel like a real mobile app.
+                            I built a library of advanced Figma components to add complex animations and interactive features. This high fidelity work ensured the prototype perfectly mimicked a real mobile app.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -396,13 +396,13 @@ const Knapsackx = () => {
                     <div className="user-research-subtitle">
                         <h3>Generative AI Graphics</h3>
                         <p>
-                            I extensively employed text-to-image AI to create graphics that align with the brand's personality and improve design efficiency. Utilizing models like Stable Diffusion XL and Leonardo Diffusion XL, I generated images that complemented the design.
+                            I built advanced Figma components for complex animations. This ensured the high fidelity prototype mimicked a real app.
                         </p>
                         <p>
-                            Crafting prompts to guide AI image generation, I prioritized key subjects and styling attributes, ensuring precise outcomes. Refining drafts using Photoshop, I utilized tools like the remove tool and generative fill for optimization and enhancements.
+                            I directed AI image generation using precise prompts to control subjects and styling. I then used Photoshop tools like generative fill to professionally refine and optimize the final visuals.
                         </p>
                         <p>
-                            Additionally, I created a separate set of AI-generated graphics with a 2D, cartoonish style to offer alternative options for the team's reference, aiding decision-making. Throughout, I upheld AI ethics, maintaining transparency and adhering to copyright specifications to safeguard business rights.
+                            I created alternative 2D AI graphics to aid team decision making. I strictly upheld AI ethics and copyright rules to safeguard business rights.
                         </p>
                     </div>
                     <div className="video-container">
@@ -417,17 +417,17 @@ const Knapsackx = () => {
 
                     <h3 className="method-title">Method</h3>
                     <p className="method-content">
-                        I interviewed 5 Canadian residents aged 18-35 interested in mobile gaming via an online survey on LinkedIn. Each participant underwent a 30-minute online interview, testing the Figma prototype with 3 assigned tasks. I moderated, with teammate Selene Choi observing. Feedback was collected via recording and an Affinity Diagram, supplemented by System Usability Scale (SUS) forms for standardized feedback.
+                        I recruited 5 Canadian gamers (aged 18-35) via LinkedIn for moderated 30-minute interviews. Participants tested the Figma prototype on 3 assigned tasks. I synthesized feedback using an Affinity Diagram and quantified success using the System Usability Scale (SUS).
                     </p>
 
                     <h3 className="findings-title">Findings</h3>
                     <p className="findings-content">
-                        All users completed the tasks successfully. Suggestions for improving the app ranged from refining icons to adjusting UI spacing. As a user advocate, I discussed these changes with the team, supported by a SUS score of 83.5, indicating general user satisfaction. With proper improvements, users can expect a smoother app experience.
+                        All users successfully completed the assigned tasks, confirming the design's effectiveness. Suggestions for improvements were mainly minor (e.g., icons and spacing). Backed by an excellent 83.5 SUS score, I successfully advocated for these changes with the team, guaranteeing a smoother final app experience for all users.
                     </p>
 
                     <h3 className="reflection-title">Reflection</h3>
                     <p className="reflection-content">
-                        I've learned the importance of staying neutral and receptive during usability testing moderation. The goal isn't personal satisfaction but gathering constructive feedback for design improvement. Testing highlights overlooked user needs and potential design frustrations, making it an invaluable tool for identifying and rectifying mistakes.
+                        I confirmed that staying neutral during testing is critical. The goal is never personal validation; it is gathering constructive feedback to identify frustrations and overlook user needs. Usability testing remains the most invaluable tool for rectifying design mistakes early.
                     </p>
 
                     <div className="usability-testing-img">
@@ -449,7 +449,7 @@ const Knapsackx = () => {
                 <div className="prototype-container">
                     <h2>➏ Design System</h2>
                     <p>
-                        I created a detailed design system outlining all design specifications, including spacing, colors, typography, buttons, icons, and interactive elements. This serves as a structured guide for adhering to the design. Since the app will be developed in React Native, I included code snippets to facilitate developers in implementing the design seamlessly.
+                        I created a detailed design system that serves as a structured guide for all design specifications. To ensure seamless implementation in React Native, I included code snippets to facilitate the developers' work.
                     </p>
                     <iframe
                         title="Figma Embed"
@@ -466,22 +466,22 @@ const Knapsackx = () => {
 
                     <h3 className="method-title">Team Collaboration Matters 🤝</h3>
                     <p className="method-content">
-                        I learned that effective communication, especially with developers, is crucial for successful collaboration. By prioritizing empathy and using tools like high-fidelity prototypes and design systems, I fostered mutual understanding. This collaborative approach ensures the final product meets both design and development needs, benefiting everyone involved.
+                        I learned that effective communication with developers is crucial for successful collaboration. Prioritizing empathy and leveraging tools like the design system fostered mutual understanding. This approach ensured the final product met both design and development needs.
                     </p>
 
                     <h3 className="findings-title">Constructive Feedback Drives Success 🚀</h3>
                     <p className="findings-content">
-                        Delivering weekly presentations to the team, I actively sought constructive feedback from various viewpoints. This practice honed my ability to accept criticism gracefully, handle challenging discussions adeptly, and champion user interests when necessary. Striking a balance between compromises and advocating for user needs underscored the significance of both soft and hard skills.
+                        Delivering weekly presentations honed my ability to actively seek constructive feedback and handle challenging discussions. I learned to gracefully balance necessary compromise with strongly championing user interests. This underscored the value of blending soft and hard skills for successful design outcomes.
                     </p>
 
                     <h3 className="reflection-title">Embrace AI for Enhanced Creativity ✨</h3>
                     <p className="reflection-content">
-                        I'm a big fan of using AI to boost productivity and creativity in real-world business tasks. In this project, I've been using AI-generated images, which I then fine-tune in Photoshop to match our brand's style. AI helps speed up tasks like brainstorming and drafting, but it's still us designers who make the big decisions. It's important to use AI responsibly and ethically. Plus, having good skills in setting up AI prompts is key to getting good results. So, I'm glad I've got those skills in my toolkit for this AI-powered era.
+                        I confirmed that AI is an invaluable tool for boosting creative productivity, but human designers remain the strategic decision makers. My ability to craft precise prompts and refine AI generated assets in Photoshop proved crucial for maintaining brand alignment. I also learned that upholding AI ethics and copyright is essential for responsible design practice in this new era.
                     </p>
 
                     <h3 className="reflection-title">Coding Skills is a Great Bonus for Designers 💻</h3>
                     <p className="reflection-content">
-                        I've learned that having coding skills is a great bonus for designers. It helps me understand the development process better, and I can communicate with developers more effectively. I've included code snippets in the design system to help developers implement the design seamlessly. This ensures that the final product will look and feel exactly as intended. It's a win-win for everyone involved.
+                        I learned that coding skills are a crucial bonus for designers. This technical understanding greatly improves communication and developer empathy. By including code snippets in the design system, I ensured seamless implementation, guaranteeing the final product would look and feel exactly as intended.
                     </p>
                 </div>
 
