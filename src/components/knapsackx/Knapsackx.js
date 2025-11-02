@@ -464,22 +464,22 @@ const Knapsackx = () => {
                 <div className="takeaways usability-testing-container writings-container grid">
                     <h2 className="usability-testing-title">Takeaways</h2>
 
-                    <h3 className="method-title">Team Collaboration Matters 🤝</h3>
+                    <h3 className="method-title">Team Collaboration Matters</h3>
                     <p className="method-content">
                         I learned that effective communication with developers is crucial for successful collaboration. Prioritizing empathy and leveraging tools like the design system fostered mutual understanding. This approach ensured the final product met both design and development needs.
                     </p>
 
-                    <h3 className="findings-title">Constructive Feedback Drives Success 🚀</h3>
+                    <h3 className="findings-title">Constructive Feedback Drives Success</h3>
                     <p className="findings-content">
                         Delivering weekly presentations honed my ability to actively seek constructive feedback and handle challenging discussions. I learned to gracefully balance necessary compromise with strongly championing user interests. This underscored the value of blending soft and hard skills for successful design outcomes.
                     </p>
 
-                    <h3 className="reflection-title">Embrace AI for Enhanced Creativity ✨</h3>
+                    <h3 className="reflection-title">Embrace AI for Enhanced Creativity</h3>
                     <p className="reflection-content">
                         I confirmed that AI is an invaluable tool for boosting creative productivity, but human designers remain the strategic decision makers. My ability to craft precise prompts and refine AI generated assets in Photoshop proved crucial for maintaining brand alignment. I also learned that upholding AI ethics and copyright is essential for responsible design practice in this new era.
                     </p>
 
-                    <h3 className="reflection-title">Coding Skills is a Great Bonus for Designers 💻</h3>
+                    <h3 className="reflection-title">Coding Skills is a Great Bonus for Designers</h3>
                     <p className="reflection-content">
                         I learned that coding skills are a crucial bonus for designers. This technical understanding greatly improves communication and developer empathy. By including code snippets in the design system, I ensured seamless implementation, guaranteeing the final product would look and feel exactly as intended.
                     </p>
