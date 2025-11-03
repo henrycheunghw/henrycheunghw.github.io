@@ -153,13 +153,13 @@ const Cooktivate = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Earn points and badges for completing cooking tasks, fostering a sense of achievement and motivation.
+                                Fosters motivation by allowing users to earn points and badges for completing tasks.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Interact with Riceball, an adorable seal character, as your guide in the world of culinary exploration.
+                                Enhances user guidance and brand personality via Riceball, the adorable seal character.
                             </p>
                         </div>
                         <div className="call-riceball">
@@ -212,19 +212,19 @@ const Cooktivate = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Get personalized cooking guidance from Riceball, the chatbot powered by AI speciaizing in cooking.
+                                Get personalized cooking guidance from Riceball, the specialized AI chatbot.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Customize cooking challenges to match your food preferences and specific culinary interests.
+                                Cooking challenges are customized to match your food preferences and culinary interests.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                            Access a range of cooking tutorials, including videos, texts, and voice-overs, tailored to your unique learning style and needs.
+                                Access tutorials via video, text, or voice-overs, tailored to your unique learning style.
                             </p>
                         </div>
                     </div>
@@ -239,19 +239,19 @@ const Cooktivate = () => {
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Engage in cooking challenges with friends, competing for top scores and earning well-deserved recognition.
+                                Engage in cooking challenges with friends, competing for top scores and well deserved recognition.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Connect with friends and a community of cooking enthusiasts, fostering meaningful connections.
+                                Connect with friends and other cooking enthusiasts, fostering meaningful connections.
                             </p>
                         </div>
                         <div className="bullet-pts">
                             <p className="bullet">►</p>
                             <p>
-                                Explore and discover a diverse range of food and recipes shared by fellow users, igniting inspiration and culinary exploration.
+                                Explore diverse recipes shared by fellow users, igniting inspiration and culinary exploration.
                             </p>
                         </div>
                     </div>
