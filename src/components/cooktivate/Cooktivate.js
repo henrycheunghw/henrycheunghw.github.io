@@ -290,7 +290,7 @@ const Cooktivate = () => {
                     <div className="user-research-subtitle">
                         <h3>User Workflow</h3>
                         <p>
-                            This user flow lets users pick cooking challenges with clear step-by-step instructions. After finishing, they can upload images for points and medals. Users can also check out others' work and take on new challenges to keep learning.
+                            Users select cooking challenges with clear instructions. Upon completion, they upload images to earn points and medals. They can then browse others' work to find new challenges and continue learning.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -300,7 +300,7 @@ const Cooktivate = () => {
                     <div className="user-research-subtitle">
                         <h3>Card Sorting</h3>
                         <p>
-                            I leveraged UXtweak, a popular UX research tool, to enhance Cooktivate's user-friendly navigation through card sorting. This section provides insights into user perceptions of our information structure, supported by visual aids like the similarity matrix, dendrogram, and hierarchy diagram. These visuals illustrate improvements based on user input in our updated information architecture.
+                            I leveraged the UXtweak card sorting tool to refine Cooktivate's navigation and content structure. The similarity matrix and dendrogram illustrate the resulting, user-informed improvements to our updated information architecture.
                         </p>
                     </div>
                     <div className="user-research-img card-sorting-img">
@@ -312,7 +312,7 @@ const Cooktivate = () => {
                     <div className="user-research-subtitle">
                         <h3>Lean Canvas</h3>
                         <p>
-                            The lean canvas highlights Cooktivate's key business model elements, such as target customers, value proposition, revenue streams, and cost structure. It helps me understand how to build a successful and sustainable business that provides value to users.
+                            I used the Lean Canvas to define Cooktivate's key business elements (value proposition, revenue, costs). This ensured design alignment with a sustainable business model.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -322,7 +322,7 @@ const Cooktivate = () => {
                     <div className="user-research-subtitle">
                         <h3>User Persona</h3>
                         <p>
-                            The two user personas, designed for the end users of Cooktivate, offer invaluable insights into our target audience. This user-centric approach enables us to tailor our products to meet their needs, ensuring a satisfying user experience. Understanding our users' preferences and pain points drives our mission to provide the best possible experience.
+                            I developed two user personas to provide deep insight into our target audience's preferences and pain points. This user-centric approach ensures our product is precisely tailored for a satisfying user experience.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -338,7 +338,7 @@ const Cooktivate = () => {
                     <div className="user-research-subtitle">
                         <h3>Wireframing</h3>
                         <p>
-                            I've created a low-fidelity wireframe utilizing Procreate as an initial step, which provides a basic structure and layout for the app's design. It helps me visualize functionality and interactions before moving on to the final high-fidelity design in Figma.
+                            I used low-fidelity wireframes in Procreate to quickly visualize the app's basic structure and functionality. This allowed efficient iteration before moving to high-fidelity design in Figma.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -348,7 +348,7 @@ const Cooktivate = () => {
                     <div className="user-research-subtitle">
                         <h3>Design System</h3>
                         <p>
-                            I've created Cooktivate's design system to maintain a consistent brand identity. I've chosen lively orange and cool blue as primary colors for a friendly ambiance. The typography is modern and clean, while illustrations are straightforward and charming. Minimalistic icons ensure a user-friendly experience.
+                            I created Cooktivate's design system to ensure brand consistency with a friendly ambiance. The visual language uses lively orange and cool blue, modern typography, and charming, straightforward illustrations and minimalistic icons for a user-friendly experience.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -358,7 +358,7 @@ const Cooktivate = () => {
                     <div className="user-research-subtitle">
                         <h3>Logo & Illustration</h3>
                         <p>
-                            I designed Riceball, an adorable cartoon character, to accompany users on their cooking learning journey. With its charming and cute style, Riceball perfectly complements the app's design, making it approachable for everyone. I created Riceball using Adobe Illustrator, ensuring a high-quality and visually engaging addition to the app.
+                            I designed Riceball, an adorable cartoon character, using Adobe Illustrator. The charming, cute style makes the app approachable for all users and perfectly complements the brand identity throughout their cooking journey.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -368,7 +368,7 @@ const Cooktivate = () => {
                     <div className="user-research-subtitle">
                         <h3>Components</h3>
                         <p>
-                            I've designed numerous advanced Figma components for adding animations and microinteractions to our high-fidelity prototypes, making the prototype closely resemble a real mobile app.
+                            I built advanced Figma components for complex animations and microinteractions. This ensured the high-fidelity prototype closely mimicked a real app.
                         </p>
                     </div>
                     <div className="user-research-img">
@@ -379,7 +379,7 @@ const Cooktivate = () => {
                 <div className="prototype-container">
                     <h2>Prototype</h2>
                     <p>
-                        The Figma high-fidelity prototype simulates the app's actual user experience, enabling detailed testing and refinement.
+                        The Figma high-fidelity prototype simulates the actual user experience, enabling detailed testing and refinement.
                     </p>
                     <iframe
                         title="Figma Embed"
@@ -396,17 +396,17 @@ const Cooktivate = () => {
 
                     <h3 className="method-title">Method</h3>
                     <p className="method-content">
-                        The usability test evaluated Cooktivate's high-fidelity prototype, focusing on the cooking challenge feature. Participants provided feedback on design, functionality, and user experience. 
+                        The usability test evaluated the high-fidelity prototype, focusing specifically on the cooking challenge feature. Participants provided feedback on the design, functionality, and overall user experience.
                     </p>
 
                     <h3 className="findings-title">Findings</h3>
                     <p className="findings-content">
-                        Usability test participants provided valuable feedback on Cooktivate, focusing on aspects like interface design, sign-in, challenge filters, navigation, and more. These insights will drive improvements to enhance the overall user experience. The final usability testing report was created using Canva for clear and visually appealing presentation.
+                        Participants provided valuable feedback on key aspects including the interface, sign-in, challenge filters, and navigation. These insights will drive targeted improvements to enhance the overall user experience. The final report was created using Canva for clear, visually appealing presentation.
                     </p>
 
                     <h3 className="reflection-title">Reflection</h3>
                     <p className="reflection-content">
-                        The test highlighted strengths in Cooktivate's interface and sign-in process. Areas for improvement include the challenge page, cooking guidance, and user assistance. Addressing participant feedback will enhance usability and user experience.
+                        The test validated key strengths in the interface and sign-in process. Areas for improvement focused on the challenge page, cooking guidance, and user assistance. Addressing this feedback will ensure enhanced usability and user experience.
                     </p>
 
                     <div className="usability-testing-img">
@@ -426,19 +426,19 @@ const Cooktivate = () => {
                 <div className="usability-testing-container writings-container grid">
                     <h2 className="usability-testing-title">Takeaways</h2>
 
-                    <h3 className="method-title">User-Centric is Key 🔑</h3>
+                    <h3 className="method-title">User-Centric is Key</h3>
                     <p className="method-content">
-                        Prioritizing user needs and addressing real-world problems is paramount in effective UX design. Identifying the primary user pain point, such as the challenge of learning cooking, served as the foundation for this project. Our solution centered around a gamified, social experience with a refreshing color palette, engaging UX writing, and delightful illustrations, ensuring a simple and enjoyable user journey.
+                        Identifying that users struggle with learning cooking was this project's foundation. The solution was a gamified, social experience with a refreshing visual style, ensuring a simple, enjoyable user journey.
                     </p>
 
-                    <h3 className="findings-title">Design System Matters 🎨</h3>
+                    <h3 className="findings-title">Design System Matters</h3>
                     <p className="findings-content">
-                        Establishing a design system upfront may seem daunting, but it pays dividends during high-fidelity prototyping. This approach streamlines the application of interactions and animations to buttons, toggles, and illustrations across all screens. Moreover, it guarantees design consistency, a fundamental requirement in the professional UX design landscape.
+                        Establishing the design system upfront streamlines the application of interactions and animations across all components. This approach pays major dividends during high-fidelity prototyping, guaranteeing the design consistency required in professional UX.
                     </p>
 
-                    <h3 className="reflection-title">Always Plan before Work 🗓️</h3>
+                    <h3 className="reflection-title">Always Plan before Work</h3>
                     <p className="reflection-content">
-                        This multifaceted project encompassed UX research, UX/UI design, graphic design, and usability testing, necessitating a well-structured schedule. Leveraging Trello, a renowned productivity tool, was instrumental in maintaining organization and ensuring a smooth design process. Thorough planning is a cornerstone of success in complex projects.
+                        This complex, multifaceted project required a well-structured schedule encompassing UX/UI design, research, and testing. Leveraging Trello was instrumental in maintaining organization and ensuring a smooth process, reinforcing that thorough planning is a cornerstone of success.
                     </p>
 
                     <div className="takeaways-img">
