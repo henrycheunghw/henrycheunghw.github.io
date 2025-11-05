@@ -305,7 +305,7 @@ body::-webkit-scrollbar-thumb {
   h1 {
     font-size: 40px;
   }
-  h2 {
+  f h2 {
     font-size: 32px;
   }
   h3 {
@@ -727,36 +727,36 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .home-hero .hero-cards .personal-logo-icon {
-  animation-delay: 0s;
+  animation-delay: 2.5s;
   z-index: 9998;
   top: 180px;
 }
 .home-hero .hero-cards .askaiden-icon {
-  animation-delay: 0.5s;
+  animation-delay: 2s;
   z-index: 9;
   top: 164px;
   left: 36px;
 }
 .home-hero .hero-cards .inm-icon {
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   z-index: 8;
   top: 146px;
   left: 60px;
 }
 .home-hero .hero-cards .cooktivate-icon {
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   z-index: 7;
   top: 124px;
   left: 72px;
 }
 .home-hero .hero-cards .sad-pigeon-icon {
-  animation-delay: 2s;
+  animation-delay: 0.5s;
   z-index: 6;
   top: 96px;
   left: 66px;
 }
 .home-hero .hero-cards .sirloin-society-icon {
-  animation-delay: 2.5s;
+  animation-delay: 0s;
   z-index: 5;
   top: 64px;
   left: 54px;
