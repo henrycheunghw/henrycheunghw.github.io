@@ -887,7 +887,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.8s ease;
 }
 .projects .projects-details .projects:hover {
-  border-color: rgba(143, 245, 225, 0.8);
+  border-color: rgba(143, 245, 225, 0.3);
   box-shadow: 0 0 3px rgba(143, 245, 225, 0.2);
   background: rgba(143, 245, 225, 0.03);
 }
