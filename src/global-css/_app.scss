@@ -1399,7 +1399,7 @@ body::-webkit-scrollbar-thumb {
             align-content: space-around;
             background-color: $d-darkgrey;
             box-shadow: 0px 0px 50px -3px rgba(120,120,120,0.3);
-            border: 1px solid $l-mid-grey;
+            border: 2px solid $l-mid-grey;
             border-radius: 10px;
             min-height: 50vh;
             opacity: 0;
@@ -1418,10 +1418,20 @@ body::-webkit-scrollbar-thumb {
             }
 
             &:hover{
-                box-shadow: 0 0 8px $cyan;
-                border-color: $cyan;
+                border-color: rgba(143, 245, 225, 0.3);
+                box-shadow: 0 0 3px rgba(143, 245, 225, 0.2);
+                background: rgba(143, 245, 225, 0.03);
                 .intro-title {
-                    color: $cyan;
+                    /* 1. Set the background to the gradient */
+                    background: $green-blue-gradient;
+                    
+                    /* 2. Clip the background to the text area (Standard and Webkit) */
+                    -webkit-background-clip: text; 
+                    background-clip: text; 
+                    
+                    /* 3. Make the foreground text transparent so the gradient shines through */
+                    -webkit-text-fill-color: transparent; 
+                    text-fill-color: transparent;
                 }
             }
 
