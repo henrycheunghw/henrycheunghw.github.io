@@ -104,10 +104,10 @@ const Skills = () => {
                         <div className="iam">
                             <h1 className="big-title name">I'm absolutely great at</h1>
                         </div>
-                        <div className="arrow glow">
-                            <p className="arrow1">►</p>
-                            <p className="arrow2">►</p>
-                            <p className="arrow3">►</p>
+                        <div className="arrow">
+                            <p className="arrow1 gradient-text">►</p>
+                            <p className="arrow2 gradient-text">►</p>
+                            <p className="arrow3 gradient-text">►</p>
                         </div>
                         <div className="skills-role">
                             <p className={`uiux ${activeSkill === 'uiux' ? 'active' : ''}`} onClick={() => handleClick('uiux')}>UI/UX Design</p>
