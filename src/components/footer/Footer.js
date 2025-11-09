@@ -65,7 +65,7 @@ const Footer = () => {
                         </a>
 
                         <a 
-                            href="https://drive.google.com/file/d/1y03aq5B7tXwzGWyOwYzBY2reAMJaUb_W/view?usp=sharing" 
+                            href="https://drive.google.com/file/d/1_qbmyeOmDkPCWl5MYpMw59UvLYDJxaXW/view" 
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => trackClick("Resume")}
