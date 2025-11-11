@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import ReactGA from "react-ga4";
 
 import Figma from "../../assets/skills/figma.svg"; 
+import Sketch from "../../assets/skills/sketch.svg";
 import Illustrator from "../../assets/skills/illustrator.svg";
 import Photoshop from "../../assets/skills/photoshop.svg";
 import Framer from "../../assets/skills/framer.svg";
@@ -135,11 +136,11 @@ const Skills = () => {
                             <div className="card-items">
                                 <div className="col1">
                                     <div className="card-item"><img src={Figma} alt="Figma"/><p>Figma</p></div>
+                                    <div className="card-item"><img src={Sketch} alt="Sketch"/><p>Sketch</p></div>
                                     <div className="card-item"><img src={Illustrator} alt="Illustrator"/><p>Illustrator</p></div>
                                     <div className="card-item"><img src={Photoshop} alt="Photoshop"/><p>Photoshop</p></div>
                                     <div className="card-item"><img src={Framer} alt="Framer"/><p>Framer</p></div>
                                     <div className="card-item"><img src={Miro} alt="Miro"/><p>Miro</p></div>
-                                    <div className="card-item"><img src={Protopie} alt="ProtoPie"/><p>ProtoPie</p></div>
                                     <div className="card-item"><img src={Xd} alt="XD"/><p>XD</p></div>
                                 </div>
                                 <div className="col2">
@@ -149,15 +150,15 @@ const Skills = () => {
                                     <div className="card-item"><img src={Wix} alt="Wix"/><p>Wix</p></div>
                                     <div className="card-item"><img src={Procreate} alt="Procreate"/><p>Procreate</p></div>
                                     <div className="card-item"><img src={Indesign} alt="InDesign"/><p>InDesign</p></div>
-                                    <div className="card-item"><img src={Spline} alt="Spline"/><p>Spline</p></div>
+                                    <div className="card-item"><img src={Protopie} alt="ProtoPie"/><p>ProtoPie</p></div>
                                 </div>
                                 <div className="col3">
                                     <div className="card-item"><img src={Canva} alt="Canva"/><p>Canva</p></div>
-                                    <div className="card-item last"><img src={Zeplin} alt="Zeplin"/><p>Zeplin</p></div>
+                                    <div className="card-item"><img src={Zeplin} alt="Zeplin"/><p>Zeplin</p></div>
                                     <div className="card-item"><img src={Aftereffects} alt="After Effects"/><p>After Effects</p></div>
                                     <div className="card-item"><img src={Dimension} alt="Dimension"/><p>Dimension</p></div>
                                     <div className="card-item"><img src={Aero} alt="Aero"/><p>Aero</p></div>
-                                    <div className="card-item"><img src={Jitter} alt="Jitter"/><p>Jitter</p></div>
+                                    <div className="card-item"><img src={Spline} alt="Spline"/><p>Spline</p></div>
                                     <div className="card-item"><img src={Uxtweak} alt="UXTweak"/><p>UXTweak</p></div>
                                 </div>
                             </div>
