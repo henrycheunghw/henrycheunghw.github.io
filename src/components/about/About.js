@@ -118,11 +118,15 @@ const About = () => {
                                 <p className="extra-bold-white about-subtitles">LinkedIn Learning</p>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
+                                    <p>Career Essentials in Generative AI by Microsoft and LinkedIn</p>
+                                </div>
+                                <div className="bullet-pts">
+                                    <p className="bullet">►</p>
                                     <p>The AI-Driven Product Designer</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
-                                    <p>Career Essentials in Generative AI by Microsoft and LinkedIn</p>
+                                    <p>Exploring AI Workflows within Figma Design</p>
                                 </div>
                                 <div className="bullet-pts">
                                     <p className="bullet">►</p>
