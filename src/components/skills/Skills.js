@@ -157,7 +157,6 @@ const Skills = () => {
                                     <div className="card-item"><img src={Zeplin} alt="Zeplin"/><p>Zeplin</p></div>
                                     <div className="card-item"><img src={Aftereffects} alt="After Effects"/><p>After Effects</p></div>
                                     <div className="card-item"><img src={Dimension} alt="Dimension"/><p>Dimension</p></div>
-                                    <div className="card-item"><img src={Aero} alt="Aero"/><p>Aero</p></div>
                                     <div className="card-item"><img src={Spline} alt="Spline"/><p>Spline</p></div>
                                     <div className="card-item"><img src={Uxtweak} alt="UXTweak"/><p>UXTweak</p></div>
                                 </div>
@@ -243,6 +242,7 @@ const Skills = () => {
                                     <div className="card-item"><img src={Graphic} alt="Graphic Design"/><p>Graphic Design</p></div>
                                     <div className="card-item"><img src={Premiere} alt="Premiere"/><p>Premiere</p></div>
                                     <div className="card-item"><img src={Audition} alt="Audition"/><p>Audition</p></div>
+                                    <div className="card-item"><img src={Aero} alt="Aero"/><p>Aero</p></div>
                                 </div>
                             </div>
                         </div>
