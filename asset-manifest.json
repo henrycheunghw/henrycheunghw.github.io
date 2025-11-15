@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba8eb7f5.css",
+    "main.css": "/static/css/main.a2c58c8d.css",
     "main.js": "/static/js/main.9ede43fa.js",
     "static/js/787.eb1c1c13.chunk.js": "/static/js/787.eb1c1c13.chunk.js",
     "static/media/knapsackx-powerpoint.mp4": "/static/media/knapsackx-powerpoint.0948be3edcd7452e3bd5.mp4",
@@ -163,12 +163,12 @@
     "static/media/webflow.svg": "/static/media/webflow.327e82f2fc78ca729edbb4f453710e3b.svg",
     "static/media/miro.svg": "/static/media/miro.b1457362af3180ffcdb69554a0ff0378.svg",
     "static/media/components.svg": "/static/media/components.17568cc69a7f21c7dd3187498d6f2921.svg",
-    "main.ba8eb7f5.css.map": "/static/css/main.ba8eb7f5.css.map",
+    "main.a2c58c8d.css.map": "/static/css/main.a2c58c8d.css.map",
     "main.9ede43fa.js.map": "/static/js/main.9ede43fa.js.map",
     "787.eb1c1c13.chunk.js.map": "/static/js/787.eb1c1c13.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba8eb7f5.css",
+    "static/css/main.a2c58c8d.css",
     "static/js/main.9ede43fa.js"
   ]
 }
