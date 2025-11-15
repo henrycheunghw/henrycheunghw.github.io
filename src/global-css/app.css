@@ -89,16 +89,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   white-space: nowrap;
   background: #212121;
-  transition: all 0.8s ease;
+  transition: all 0.5s ease;
 }
 .button:hover {
-  transform: translateY(-1px);
   background: linear-gradient(45deg, rgb(49, 189, 140) 0%, rgb(55, 232, 211) 100%);
   color: #0d0d0d;
   border: none;
-}
-.button:active {
-  transform: translateY(1px);
 }
 
 .view-others {
@@ -191,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   cursor: pointer;
   z-index: 9998;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .scroll-button:hover {
   transform: scale(1.1);
@@ -220,6 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 .contact-button:hover {
+  transform: scale(1.03);
   animation: shine 1s ease-in-out infinite alternate;
 }
 @keyframes shine {
@@ -581,6 +578,7 @@ body::-webkit-scrollbar-thumb {
   width: 25px;
   margin-top: 3.1rem;
   margin-right: 1rem;
+  opacity: 0.8;
   transition: all 0.2s linear;
 }
 .home-hero .hero-content .components img:hover {
@@ -609,6 +607,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 0.1rem;
   margin-right: 1rem;
   transition: all 0.2s linear;
+  opacity: 0.6;
 }
 .home-hero .hero-content .effects img:hover {
   transform: scale(1.1);

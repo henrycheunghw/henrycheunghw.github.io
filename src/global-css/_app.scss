@@ -123,18 +123,17 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     white-space: nowrap;
     background: $l-darkgrey;
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
     
     &:hover {
-        transform: translateY(-1px);
         background: $green-blue-gradient;
         color: $d-darkgrey;
         border: none;
     }
     
-    &:active {
-        transform: translateY(1px);
-    }
+    // &:active {
+    //     transform: translateY(1px);
+    // }
 }
 
 .view-others {
@@ -292,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     cursor: pointer;
     z-index: 9998;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     &:hover {
         transform: scale(1.1);
@@ -349,6 +348,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
 
     &:hover {
+        transform: scale(1.03);
         animation: shine 1s ease-in-out infinite alternate;
         @keyframes shine {
             0% {
@@ -771,6 +771,7 @@ body::-webkit-scrollbar-thumb {
                     top: 3.1rem;
                     right: 1rem;
                 }
+                opacity: 0.8;
                 transition: all 0.2s linear;
                 
                 &:hover {
@@ -805,6 +806,7 @@ body::-webkit-scrollbar-thumb {
                     right: 1rem;
                 }
                 transition: all 0.2s linear;
+                opacity: 0.6;
 
                 &:hover {
                     transform: scale(1.1);
