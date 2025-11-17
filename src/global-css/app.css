@@ -216,7 +216,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 .contact-button:hover {
-  transform: scale(1.03);
   animation: shine 1s ease-in-out infinite alternate;
 }
 @keyframes shine {
@@ -943,14 +942,10 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s ease;
 }
 .projects .projects-details .projects .project-info .project-more .project-link:hover {
-  transform: translateY(-1px);
   color: #a8f2e2;
 }
 .projects .projects-details .projects .project-info .project-more .project-link:hover .link-path {
   fill: #a8f2e2;
-}
-.projects .projects-details .projects .project-info .project-more .project-link:active {
-  transform: translateY(1px);
 }
 .projects .projects-details .projects .project-info .project-more .project-link img {
   margin: auto;
