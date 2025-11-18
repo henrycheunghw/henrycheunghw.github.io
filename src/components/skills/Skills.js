@@ -62,6 +62,7 @@ import Microsoftoffice from "../../assets/skills/microsoft-office.svg";
 import Googlesuite from "../../assets/skills/google-suite.svg";
 import Jitter from "../../assets/skills/jitter.svg";
 import Uxtweak from "../../assets/skills/uxtweak.svg";
+import Midjourney from "../../assets/skills/midjourney.svg";
 
 const Skills = () => {
 
@@ -226,6 +227,7 @@ const Skills = () => {
                                 <div className="col1">
                                     <div className="card-item"><img src={Ai} alt="Generative AI"/><p>Generative AI</p></div>
                                     <div className="card-item"><img src={Prompt} alt="Prompt Engineering"/><p>Prompt Engineering</p></div>
+                                    <div className="card-item"><img src={Midjourney} alt="Midjourney"/><p>Midjourney</p></div>
                                     <div className="card-item"><img src={Jira} alt="Jira"/><p>Jira</p></div>
                                     <div className="card-item"><img src={Trello} alt="Trello"/><p>Trello</p></div>
                                     <div className="card-item"><img src={Slack} alt="Slack"/><p>Slack</p></div>
