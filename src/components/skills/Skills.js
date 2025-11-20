@@ -63,6 +63,8 @@ import Googlesuite from "../../assets/skills/google-suite.svg";
 import Jitter from "../../assets/skills/jitter.svg";
 import Uxtweak from "../../assets/skills/uxtweak.svg";
 import Midjourney from "../../assets/skills/midjourney.svg";
+import Microsoftcopilot from "../../assets/skills/microsoft-copilot.svg";
+import Gemini from "../../assets/skills/gemini.svg";
 
 const Skills = () => {
 
@@ -227,17 +229,18 @@ const Skills = () => {
                                 <div className="col1">
                                     <div className="card-item"><img src={Ai} alt="Generative AI"/><p>Generative AI</p></div>
                                     <div className="card-item"><img src={Prompt} alt="Prompt Engineering"/><p>Prompt Engineering</p></div>
+                                    <div className="card-item"><img src={Microsoftcopilot} alt="Microsoft Copilot"/><p>Microsoft Copilot</p></div>
+                                    <div className="card-item"><img src={Gemini} alt="Gemini"/><p>Gemini</p></div>
                                     <div className="card-item"><img src={Midjourney} alt="Midjourney"/><p>Midjourney</p></div>
                                     <div className="card-item"><img src={Jira} alt="Jira"/><p>Jira</p></div>
-                                    <div className="card-item"><img src={Trello} alt="Trello"/><p>Trello</p></div>
-                                    <div className="card-item"><img src={Slack} alt="Slack"/><p>Slack</p></div>
                                 </div>
                                 <div className="col2">
+                                    <div className="card-item"><img src={Trello} alt="Trello"/><p>Trello</p></div>
+                                    <div className="card-item"><img src={Slack} alt="Slack"/><p>Slack</p></div>
                                     <div className="card-item"><img src={Microsoftoffice} alt="Microsoft Office"/><p>Microsoft Office</p></div>
                                     <div className="card-item"><img src={Googlesuite} alt="Google Suite"/><p>Google Suite</p></div>
                                     <div className="card-item"><img src={Storytelling} alt="Storytelling"/><p>Storytelling</p></div>
                                     <div className="card-item"><img src={Copywriting} alt="Copywriting"/><p>Copywriting</p></div>
-                                    <div className="card-item"><img src={Novels} alt="Novels Writing"/><p>Novels Writing</p></div>
                                 </div>
                                 <div className="col3">
                                     <div className="card-item"><img src={Socialmedia} alt="Social Media"/><p>Social Media</p></div>
