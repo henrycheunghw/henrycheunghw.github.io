@@ -65,6 +65,7 @@ import Uxtweak from "../../assets/skills/uxtweak.svg";
 import Midjourney from "../../assets/skills/midjourney.svg";
 import Microsoftcopilot from "../../assets/skills/microsoft-copilot.svg";
 import Gemini from "../../assets/skills/gemini.svg";
+import Stablediffusion from "../../assets/skills/stable-diffusion.svg";
 
 const Skills = () => {
 
@@ -232,17 +233,18 @@ const Skills = () => {
                                     <div className="card-item"><img src={Microsoftcopilot} alt="Microsoft Copilot"/><p>Microsoft Copilot</p></div>
                                     <div className="card-item"><img src={Gemini} alt="Gemini"/><p>Gemini</p></div>
                                     <div className="card-item"><img src={Midjourney} alt="Midjourney"/><p>Midjourney</p></div>
-                                    <div className="card-item"><img src={Jira} alt="Jira"/><p>Jira</p></div>
+                                    <div className="card-item"><img src={Stablediffusion} alt="Stable Diffusion"/><p>Stable Diffusion</p></div>
                                 </div>
                                 <div className="col2">
+                                    <div className="card-item"><img src={Jira} alt="Jira"/><p>Jira</p></div>
                                     <div className="card-item"><img src={Trello} alt="Trello"/><p>Trello</p></div>
                                     <div className="card-item"><img src={Slack} alt="Slack"/><p>Slack</p></div>
                                     <div className="card-item"><img src={Microsoftoffice} alt="Microsoft Office"/><p>Microsoft Office</p></div>
                                     <div className="card-item"><img src={Googlesuite} alt="Google Suite"/><p>Google Suite</p></div>
                                     <div className="card-item"><img src={Storytelling} alt="Storytelling"/><p>Storytelling</p></div>
-                                    <div className="card-item"><img src={Copywriting} alt="Copywriting"/><p>Copywriting</p></div>
                                 </div>
                                 <div className="col3">
+                                    <div className="card-item"><img src={Copywriting} alt="Copywriting"/><p>Copywriting</p></div>
                                     <div className="card-item"><img src={Socialmedia} alt="Social Media"/><p>Social Media</p></div>
                                     <div className="card-item"><img src={Graphic} alt="Graphic Design"/><p>Graphic Design</p></div>
                                     <div className="card-item"><img src={Premiere} alt="Premiere"/><p>Premiere</p></div>
