@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.eac4d908.css",
-    "main.js": "/static/js/main.01eb55bf.js",
+    "main.js": "/static/js/main.9b77d1a6.js",
     "static/js/787.eb1c1c13.chunk.js": "/static/js/787.eb1c1c13.chunk.js",
     "static/media/knapsackx-powerpoint.mp4": "/static/media/knapsackx-powerpoint.0948be3edcd7452e3bd5.mp4",
     "static/media/mymori-gamification.mp4": "/static/media/mymori-gamification.1c30462634c4b8cf452e.mp4",
@@ -77,6 +77,7 @@
     "static/media/cooktivate-illustration.png": "/static/media/cooktivate-illustration.748a318eaa3c0908f4fa.png",
     "static/media/mymori.png": "/static/media/mymori.4123787ae3ad7572253b.png",
     "static/media/propic.png": "/static/media/propic.0150d5c834598bbb061a.png",
+    "static/media/stable-diffusion.svg": "/static/media/stable-diffusion.7a8db86feb0c9f6168a364284ed28fe3.svg",
     "static/media/askaiden.png": "/static/media/askaiden.df95b77968dba1123e67.png",
     "static/media/cooktivate-usability-testing-report.png": "/static/media/cooktivate-usability-testing-report.1e2ed4f0fb4aad1e2df7.png",
     "static/media/sirloin-society-hero.png": "/static/media/sirloin-society-hero.c81493d92570792c33c6.png",
@@ -167,11 +168,11 @@
     "static/media/miro.svg": "/static/media/miro.b1457362af3180ffcdb69554a0ff0378.svg",
     "static/media/components.svg": "/static/media/components.17568cc69a7f21c7dd3187498d6f2921.svg",
     "main.eac4d908.css.map": "/static/css/main.eac4d908.css.map",
-    "main.01eb55bf.js.map": "/static/js/main.01eb55bf.js.map",
+    "main.9b77d1a6.js.map": "/static/js/main.9b77d1a6.js.map",
     "787.eb1c1c13.chunk.js.map": "/static/js/787.eb1c1c13.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eac4d908.css",
-    "static/js/main.01eb55bf.js"
+    "static/js/main.9b77d1a6.js"
   ]
 }
